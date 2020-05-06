@@ -1,1 +1,26 @@
 @import url("../../index.css");
+
+.currentWeather {
+  border: 1px solid goldenrod;
+  margin: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.currentLocation {
+  border: 1px solid gold;
+  margin: 0.25rem;
+}
+
+.conditions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid yellow;
+  margin: 0.1rem;
+}
+
+.condition {
+  border: 1px solid gold;
+  margin: 0.25rem;
+  flex-grow: 1;
+}

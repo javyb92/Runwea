@@ -21,10 +21,11 @@ nav {
   background-color: var(--primary-color);
   position: sticky;
   top: 0;
-  box-shadow: var(--dark-color-secondary) 1px 1px 10px 1px;
+  box-shadow: var(--dark-color-secondary-shadow) 1px 1px 2px 1px;
 }
 
 nav.container {
+  height: 15vh;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   padding: 1rem;
