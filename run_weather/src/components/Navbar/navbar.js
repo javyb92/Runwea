@@ -6,8 +6,9 @@ import logo from "../../img/logo.png";
 function Navbar() {
   return (
     <nav className="container">
-      <div className="logo">
+      <div className="logospace">
         <img className="logo" src={logo}></img>
+        <h1>RUNAVI</h1>
       </div>
       <div className="search">
         <Searchbar />
@@ -16,7 +17,9 @@ function Navbar() {
         </div>
       </div>
       <div className="githubInfo">
-        <p>github Icon</p>
+        <a href="https://github.com/javyb92" className="github-link">
+          <i class="fab fa-github-square"></i>
+        </a>
       </div>
     </nav>
   );

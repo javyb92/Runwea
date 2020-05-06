@@ -4,3 +4,40 @@ input {
   width: 35vw;
   height: 5vh;
 }
+
+.searchbar {
+  justify-content: center;
+  position: sticky;
+  display: flex;
+}
+
+.searchTerm {
+  width: 35vw;
+  height: 5vh;
+  border: 3px solid var(--secondary-color);
+  border-right: none;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: black;
+}
+
+.searchTerm:focus {
+  color: var(--primary-color);
+}
+
+.searchButton {
+  width: 40px;
+  height: 5vh;
+  border: 1px solid var(--secondary-color);
+  background: var(--secondary-color);
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.fa-search {
+  color: var(--primary-color);
+}

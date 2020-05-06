@@ -5,6 +5,18 @@
   width: 75px;
 }
 
+.logospace,
+h1 {
+  color: var(--secondary-color);
+}
+
+.logospace {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 nav {
   background-color: var(--primary-color);
   position: sticky;
@@ -14,7 +26,7 @@ nav {
 
 nav.container {
   display: grid;
-  grid-template-columns: 2fr 10fr 2fr;
+  grid-template-columns: 1fr 3fr 1fr;
   padding: 1rem;
   align-items: center;
 }
@@ -27,4 +39,9 @@ nav.container {
 
 .searched-cities {
   margin-top: 0.5rem;
+}
+
+.fa-github-square {
+  color: var(--secondary-color);
+  font-size: 50px;
 }

@@ -7,9 +7,11 @@ function Searchbar() {
       <input
         type="text"
         className="searchTerm"
-        placeholder="What are you looking for?"
+        placeholder="Search for your area"
       />
-      <button type="submit" class="searchButton"></button>
+      <button type="submit" className="searchButton">
+        <i class="fa fa-search"></i>
+      </button>
     </div>
   );
 }
