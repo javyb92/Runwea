@@ -24,3 +24,11 @@
   margin: 0.25rem;
   flex-grow: 1;
 }
+
+@media (max-width: 426px) {
+  /* Stack Grid Items */
+  .conditions {
+    display: flex;
+    flex-direction: column;
+  }
+}

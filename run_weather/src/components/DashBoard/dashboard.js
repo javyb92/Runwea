@@ -1,6 +1,7 @@
 import React from "react";
 import CurrentWeather from "../CurrentWeather/currentweather";
 import ForcastedWeather from "../ForecastedWeather/forcastweather";
+import RunDashboard from "../RunDash/rundash";
 import "./style.css";
 
 function Dashboard() {
@@ -10,7 +11,9 @@ function Dashboard() {
         <CurrentWeather />
         <ForcastedWeather />
       </section>
-      <section className="RunDash">RUNDASHBOARD</section>
+      <section className="RunDash">
+        <RunDashboard />
+      </section>
     </main>
   );
 }

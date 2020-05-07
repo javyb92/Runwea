@@ -8,7 +8,7 @@ function Navbar() {
     <nav className="container">
       <div className="logospace">
         <img className="logo" src={logo}></img>
-        <h1>RUNAVI</h1>
+        <h1>RUNWEA</h1>
       </div>
       <div className="search">
         <Searchbar />

@@ -41,3 +41,11 @@ input {
 .fa-search {
   color: var(--primary-color);
 }
+
+@media (max-width: 426px) {
+  /* Stack Grid Items */
+
+  .searchTerm {
+    width: 68vw;
+  }
+}

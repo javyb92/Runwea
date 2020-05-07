@@ -18,6 +18,8 @@ h1 {
 }
 
 nav {
+  display: flex;
+  width: 100vw;
   background-color: var(--primary-color);
   position: sticky;
   top: 0;
@@ -26,6 +28,7 @@ nav {
 
 nav.container {
   height: 15vh;
+  width: 100vw;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   padding: 1rem;
@@ -40,9 +43,37 @@ nav.container {
 
 .searched-cities {
   margin-top: 0.5rem;
+  border: 1px solid var(--secondary-color);
 }
 
 .fa-github-square {
   color: var(--secondary-color);
   font-size: 50px;
+}
+
+@media (max-width: 426px) {
+  /* Stack Grid Items */
+
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .logospace {
+    flex-direction: column;
+  }
+
+  .logospace,
+  h1 {
+    color: var(--secondary-color);
+    font-size: x-small;
+  }
+
+  .fa-github-square {
+    display: none;
+  }
+
+  nav.container {
+    grid-template-columns: 1fr 5fr;
+  }
 }
