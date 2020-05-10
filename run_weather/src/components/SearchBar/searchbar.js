@@ -1,25 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 import API from "../../utils/API";
 
 function Searchbar() {
-  const [weather, setWeather] = useState();
+  const [userInput, setUserInput] = useState("");
+  const [city, setCity] = useState("");
 
-  function searchCity() {
-    API.getCurrentWeather().then((res) => console.log(res.data));
-  }
+  useEffect(() => {
+    API.getCurrentWeather(city).then((res) => {
+      console.log(res.data);
+    });
+  }, [city]);
+
+  const findCity = (e) => {
+    e.preventDefault();
+    setCity(userInput);
+  };
+
+  const onChange = (e) => {
+    setUserInput(e.target.value);
+  };
 
   return (
-    <div className="searchbar">
+    <form onSubmit={findCity} className="searchbar">
       <input
         type="text"
         className="searchTerm"
         placeholder="Search for your area"
+        value={userInput}
+        onChange={onChange}
       />
-      <button onClick={searchCity} type="submit" className="searchButton">
+      <button type="submit" className="searchButton">
         <i class="fa fa-search"></i>
       </button>
-    </div>
+    </form>
   );
 }
 
