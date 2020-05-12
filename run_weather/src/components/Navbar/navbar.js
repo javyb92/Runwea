@@ -4,8 +4,9 @@ import "../SearchBar/style.css";
 import Dashboard from "../DashBoard/dashboard";
 import logo from "../../img/logo.png";
 import API from "../../utils/API";
+import WeatherContext from "../SearchBar/WeatherContext";
 
-function Navbar() {
+function Search() {
   const [userInput, setUserInput] = useState("");
   const [city, setCity] = useState({
     Location: "",
@@ -44,7 +45,7 @@ function Navbar() {
   };
 
   return (
-    <div>
+    <WeatherContext.Provider value={city}>
       <nav className="container">
         <div className="logospace">
           <img className="logo" src={logo}></img>
@@ -74,8 +75,8 @@ function Navbar() {
         </div>
       </nav>
       <Dashboard />
-    </div>
+    </WeatherContext.Provider>
   );
 }
 
-export default Navbar;
+export default Search;
