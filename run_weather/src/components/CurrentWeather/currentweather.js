@@ -15,6 +15,7 @@ function CurrentWeather() {
     Humidity,
     Conditions,
     Wind,
+    uv,
   } = useContext(WeatherContext);
 
   return (
@@ -33,6 +34,7 @@ function CurrentWeather() {
           <ul>
             <li>{Humidity}</li>
             <li>{Wind}</li>
+            <li>{uv}</li>
           </ul>
         </div>
         <div className="condition">WEATHERWARNING</div>

@@ -8,6 +8,9 @@ const WeatherContext = React.createContext({
   Humidity: "",
   Conditions: "",
   Wind: "",
+  lat: "",
+  lon: "",
+  uv: "",
 });
 
 export default WeatherContext;

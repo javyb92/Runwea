@@ -13,7 +13,6 @@ import "./style.css";
 function ForcastedWeather() {
   return (
     <div className="ForcastedWeather">
-      ForcastedWeather
       <NextDay />
     </div>
   );
