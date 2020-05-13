@@ -4,11 +4,11 @@ import "../SearchBar/style.css";
 import Dashboard from "../DashBoard/dashboard";
 import logo from "../../img/logo.png";
 import API from "../../utils/API";
-import WeatherContext from "../SearchBar/WeatherContext";
+import WeatherContext from "../../utils/context/WeatherContext";
 
 function Search() {
   const [userInput, setUserInput] = useState([]);
-  const [city, setCity] = useState({
+  const [city, setCity] = useState("Dallas", {
     Location: "",
     CurrentTemperature: "",
     HiToday: "",
@@ -22,33 +22,31 @@ function Search() {
   });
 
   useEffect(() => {
-    API.getCurrentWeather(city)
-      .then((res) => {
-        const Location = res.data.name;
-        const CurrentTemperature = Math.round(res.data.main.temp);
-        const HiToday = Math.round(res.data.main.temp_max);
-        const LoToday = Math.round(res.data.main.temp_min);
-        const Humidity = Math.round(res.data.main.humidity);
-        const Conditions = res.data.weather[0].main;
-        const Wind = Math.round(res.data.wind.speed);
-        const lat = res.data.coord.lat;
-        const lon = res.data.coord.lat;
+    API.getCurrentWeather(city).then((res) => {
+      const Location = res.data.name;
+      const CurrentTemperature = Math.round(res.data.main.temp);
+      const HiToday = Math.round(res.data.main.temp_max);
+      const LoToday = Math.round(res.data.main.temp_min);
+      const Humidity = Math.round(res.data.main.humidity);
+      const Conditions = res.data.weather[0].main;
+      const Wind = Math.round(res.data.wind.speed);
+      const lat = res.data.coord.lat;
+      const lon = res.data.coord.lat;
 
-        API.getUVIndex(lat, lon).then((res) => {
-          const currentUV = Math.round(res.data[0].value);
-          setCity({
-            Location: Location,
-            CurrentTemperature: CurrentTemperature,
-            HiToday: HiToday,
-            LoToday: LoToday,
-            Humidity: Humidity,
-            Conditions: Conditions,
-            Wind: Wind,
-            uv: currentUV,
-          });
+      API.getUVIndex(lat, lon).then((res) => {
+        const currentUV = Math.round(res.data[0].value);
+        setCity({
+          Location: Location,
+          CurrentTemperature: CurrentTemperature,
+          HiToday: HiToday,
+          LoToday: LoToday,
+          Humidity: Humidity,
+          Conditions: Conditions,
+          Wind: Wind,
+          uv: currentUV,
         });
-      })
-      .then(console.log(city));
+      });
+    });
   }, [city]);
 
   const findCity = (e) => {
@@ -56,10 +54,9 @@ function Search() {
     setCity(userInput);
   };
 
-  const onChange = (e) => {
+  const onSubmit = (e) => {
     setUserInput(e.target.value);
   };
-
   return (
     <WeatherContext.Provider value={city}>
       <nav className="container">
@@ -74,7 +71,7 @@ function Search() {
               className="searchTerm"
               placeholder="Search for your area"
               value={userInput}
-              onChange={onChange}
+              onChange={onSubmit}
             />
             <button type="submit" className="searchButton">
               <i class="fa fa-search"></i>

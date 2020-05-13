@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./style.css";
-import WeatherContext from "../SearchBar/WeatherContext";
+import WeatherContext from "../../utils/context/WeatherContext";
 
 //AXIOS CALL to get weather
 
@@ -18,23 +18,32 @@ function CurrentWeather() {
     uv,
   } = useContext(WeatherContext);
 
+  console.log(Location);
+
   return (
     <div className="currentWeather">
-      <div className="currentLocation">{Location}</div>
+      <div className="currentLocation">
+        <h2>{Location}</h2>
+      </div>
       <div className="conditions">
         <div className="condition">
           <ul>
-            <li>{Conditions}</li>
-            <li>{CurrentTemperature}</li>
-            <li>{HiToday}</li>
-            <li>{LoToday}</li>
+            <h2>
+              <li>{CurrentTemperature}°</li>
+              <li>{Conditions}</li>
+              <li>
+                H {HiToday}° / L {LoToday}°
+              </li>
+            </h2>
           </ul>
         </div>
         <div className="condition">
           <ul>
-            <li>{Humidity}</li>
-            <li>{Wind}</li>
-            <li>{uv}</li>
+            <h2>
+              <li>{Humidity}%</li>
+              <li>{Wind} mph</li>
+              <li>UV Index: {uv} out of 10</li>
+            </h2>
           </ul>
         </div>
         <div className="condition">WEATHERWARNING</div>
