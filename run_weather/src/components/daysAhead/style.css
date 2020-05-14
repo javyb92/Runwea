@@ -1,0 +1,20 @@
+@import url("../../index.css");
+
+.daysAhead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nextDay {
+  border: 1px solid gold;
+  margin: 0.5rem;
+}
+
+@media (max-width: 426px) {
+  /* Stack Grid Items */
+  .daysAhead {
+    display: flex;
+    flex-direction: column;
+  }
+}
