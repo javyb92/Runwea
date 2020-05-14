@@ -21,4 +21,13 @@ export default {
         "&cnt=1"
     );
   },
+
+  getForcastWeather: function (f_city) {
+    return axios.get(
+      "https://api.openweathermap.org/data/2.5/forecast?q=" +
+        f_city +
+        "&units=imperial&appid=" +
+        process.env.REACT_APP_KEY
+    );
+  },
 };

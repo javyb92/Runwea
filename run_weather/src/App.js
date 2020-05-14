@@ -1,5 +1,5 @@
 import React from "react";
-import Search from "./components/Navbar/navbar";
+import Search from "./components/Search/search";
 import "./App.css";
 
 function App() {

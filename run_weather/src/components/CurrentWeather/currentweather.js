@@ -18,8 +18,6 @@ function CurrentWeather() {
     uv,
   } = useContext(WeatherContext);
 
-  console.log(Location);
-
   return (
     <div className="currentWeather">
       <div className="currentLocation">
