@@ -23,8 +23,8 @@ const ForcastedWeather = () => {
 
   const test = () => {
     API.getForcastWeather(Location).then((res) => {
-      setForecast({
-        Tomorrow: {
+      setForecast([
+        {
           Time: "Tomorrow",
           Hi: Math.round(res.data.list[0].main.temp_max),
           Lo: Math.round(res.data.list[0].main.temp_min),
@@ -32,7 +32,7 @@ const ForcastedWeather = () => {
           Wind: Math.round(res.data.list[0].wind.speed),
           Humidity: res.data.list[0].main.humidity,
         },
-        DayTwo: {
+        {
           Time: res.data.list[8].dt_txt,
           Hi: Math.round(res.data.list[8].main.temp_max),
           Lo: Math.round(res.data.list[8].main.temp_min),
@@ -40,7 +40,7 @@ const ForcastedWeather = () => {
           Wind: Math.round(res.data.list[8].wind.speed),
           Humidity: res.data.list[8].main.humidity,
         },
-        DayThree: {
+        {
           Time: res.data.list[16].dt_txt,
           Hi: Math.round(res.data.list[16].main.temp_max),
           Lo: Math.round(res.data.list[16].main.temp_min),
@@ -48,7 +48,7 @@ const ForcastedWeather = () => {
           Wind: Math.round(res.data.list[16].wind.speed),
           Humidity: res.data.list[16].main.humidity,
         },
-        DayFour: {
+        {
           Time: res.data.list[24].dt_txt,
           Hi: Math.round(res.data.list[24].main.temp_max),
           Lo: Math.round(res.data.list[24].main.temp_min),
@@ -56,7 +56,7 @@ const ForcastedWeather = () => {
           Wind: Math.round(res.data.list[24].wind.speed),
           Humidity: res.data.list[24].main.humidity,
         },
-        DayFive: {
+        {
           Time: res.data.list[32].dt_txt,
           Hi: Math.round(res.data.list[32].main.temp_max),
           Lo: Math.round(res.data.list[32].main.temp_min),
@@ -64,7 +64,7 @@ const ForcastedWeather = () => {
           Wind: Math.round(res.data.list[32].wind.speed),
           Humidity: res.data.list[32].main.humidity,
         },
-      });
+      ]);
     });
   };
   console.log(Forecast);
