@@ -8,11 +8,9 @@ import "./style.css";
 function DaysAhead() {
   const forecast = useContext(ForecastContext);
 
-  const day = forecast;
-
   return (
     <div className="daysAhead">
-      {day.map(function (day, index) {
+      {forecast.map(function (day, index) {
         return <NextDay app={day} />;
       })}
     </div>

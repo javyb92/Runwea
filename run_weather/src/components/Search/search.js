@@ -31,7 +31,7 @@ function Search() {
       const Conditions = res.data.weather[0].main;
       const Wind = Math.round(res.data.wind.speed);
       const lat = res.data.coord.lat;
-      const lon = res.data.coord.lat;
+      const lon = res.data.coord.lon;
 
       API.getUVIndex(lat, lon).then((res) => {
         const currentUV = Math.round(res.data[0].value);
@@ -44,6 +44,8 @@ function Search() {
           Conditions: Conditions,
           Wind: Wind,
           uv: currentUV,
+          lat: lat,
+          lon: lon,
         });
       });
     });

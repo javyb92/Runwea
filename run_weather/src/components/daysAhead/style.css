@@ -6,11 +6,6 @@
   justify-content: space-between;
 }
 
-.nextDay {
-  border: 1px solid gold;
-  margin: 0.5rem;
-}
-
 @media (max-width: 426px) {
   /* Stack Grid Items */
   .daysAhead {

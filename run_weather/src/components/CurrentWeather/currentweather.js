@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./style.css";
 import WeatherContext from "../../utils/context/WeatherContext";
+import WeatherAlert from "../WeatherAlert/WeatherAlert";
 
 //AXIOS CALL to get weather
 
@@ -44,7 +45,7 @@ function CurrentWeather() {
             </h2>
           </ul>
         </div>
-        <div className="condition">WEATHERWARNING</div>
+        <WeatherAlert />
       </div>
     </div>
   );

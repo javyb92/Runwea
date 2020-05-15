@@ -8,7 +8,7 @@ const NextDay = (props) => {
   console.log(thisDay);
 
   return (
-    <div>
+    <div className="nextDay">
       <p>{thisDay.time}</p>
       <p>{thisDay.condition}</p>
       <p>
