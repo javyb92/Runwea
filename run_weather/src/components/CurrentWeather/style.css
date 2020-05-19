@@ -2,13 +2,14 @@
 
 .currentWeather {
   border: 1px solid goldenrod;
-  margin: 0.5rem;
-  margin-bottom: 1rem;
+  margin: 0.25rem;
+  /* margin-bottom: 1rem; */
 }
 
 .currentLocation {
   border: 1px solid gold;
   margin: 0.25rem;
+  text-transform: uppercase;
 }
 
 .conditions {
@@ -23,6 +24,10 @@
   border: 1px solid gold;
   margin: 0.25rem;
   flex-grow: 1;
+}
+
+li {
+  list-style-type: none;
 }
 
 @media (max-width: 426px) {

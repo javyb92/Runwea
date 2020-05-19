@@ -2,15 +2,25 @@ import React, { useState, useContext, useEffect } from "react";
 import "./style.css";
 import API from "../../utils/API";
 import WeatherContext from "../../utils/context/WeatherContext";
+import { render } from "@testing-library/react";
 
-function WeatherAlert() {
+const WeatherAlert = () => {
   const { lat, lon } = useContext(WeatherContext);
-  API.getWeatherAlert(lat, lon).then((res) => {
-    const lonny = res.data.alerts;
-    // setAlert({ alert: lonny });
-    console.log(lonny);
-  });
-  return <div className="condition">Hi</div>;
-}
+  // const [alert, setAlert] = useState([{}]);
+
+  // useEffect(() => {
+  //   weatherAlerts({});
+  // }, [lat, lon]);
+
+  // const weatherAlerts = (e) => {
+  //   API.getWeatherAlert(lat, lon).then((res) => {
+  //     setAlert([{ title: res.data.alerts }]);
+  //   });
+  // };
+
+  // console.log(alert);
+
+  return <div className="condition">Alerts >:(</div>;
+};
 
 export default WeatherAlert;

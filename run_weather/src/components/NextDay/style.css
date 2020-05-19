@@ -1,4 +1,10 @@
 .nextDay {
   border: 1px solid gold;
-  margin: 0.5rem;
+  margin: 0.25rem;
+  width: 100%;
+}
+
+.day,
+h3 {
+  text-transform: uppercase;
 }

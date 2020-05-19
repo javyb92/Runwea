@@ -1,15 +1,17 @@
 import React from "react";
+import Moment from "react-moment";
+
 import "./style.css";
 
 const NextDay = (props) => {
   // console.log(this.props);
   const thisDay = props.app;
 
-  console.log(thisDay);
-
   return (
     <div className="nextDay">
-      <p>{thisDay.time}</p>
+      <h3>
+        <Moment format="ddd">{thisDay.time}</Moment>
+      </h3>
       <p>{thisDay.condition}</p>
       <p>
         Hi {thisDay.hi} / Lo {thisDay.lo}

@@ -39,13 +39,13 @@ function CurrentWeather() {
         <div className="condition">
           <ul>
             <h2>
-              <li>{Humidity}%</li>
-              <li>{Wind} mph</li>
-              <li>UV Index: {uv} out of 10</li>
+              <li>Humidity: {Humidity}%</li>
+              <li>Wind: {Wind} mph</li>
+              <li>UV Index: {uv}</li>
             </h2>
           </ul>
         </div>
-        <WeatherAlert />
+        {/* <WeatherAlert /> */}
       </div>
     </div>
   );

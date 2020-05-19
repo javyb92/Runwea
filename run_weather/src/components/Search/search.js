@@ -20,6 +20,7 @@ function Search() {
     lon: "",
     uv: "",
   });
+  // const [alert, setAlert] = useState([{ alerts: "" }]);
 
   useEffect(() => {
     API.getCurrentWeather(city).then((res) => {
@@ -32,7 +33,6 @@ function Search() {
       const Wind = Math.round(res.data.wind.speed);
       const lat = res.data.coord.lat;
       const lon = res.data.coord.lon;
-
       API.getUVIndex(lat, lon).then((res) => {
         const currentUV = Math.round(res.data[0].value);
         setCity({
@@ -54,7 +54,18 @@ function Search() {
   const findCity = (e) => {
     e.preventDefault();
     setCity(userInput);
+    // getAlert();
   };
+
+  // const getAlert = (e) => {
+  //   API.getWeatherAlert(city.lat, city.lon).then((res) => {
+  //     console.log(res.data);
+  //     if ()
+  //     setAlert([{ severity: res.data.alerts[0].severity }]);
+  //   });
+  // };
+
+  // console.log(alert);
 
   const onSubmit = (e) => {
     setUserInput(e.target.value);

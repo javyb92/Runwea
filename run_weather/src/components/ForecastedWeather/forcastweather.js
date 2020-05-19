@@ -25,7 +25,7 @@ const ForcastedWeather = () => {
     API.getForcastWeather(Location).then((res) => {
       setForecast([
         {
-          time: "Tomorrow",
+          time: res.data.list[0].dt_txt,
           hi: Math.round(res.data.list[0].main.temp_max),
           lo: Math.round(res.data.list[0].main.temp_min),
           condition: res.data.list[0].weather[0].main,

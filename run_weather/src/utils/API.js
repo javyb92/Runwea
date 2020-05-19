@@ -52,9 +52,9 @@ export default {
         "&lon=" +
         lon +
         "&key=" +
-        process.env.REACT_APP_KEY_WB
-      // Below is test key, above is production
-      // process.env.REACT_APP_KEY_WB_TEST
+        // process.env.REACT_APP_KEY_WB
+        // Below is test key, above is production
+        process.env.REACT_APP_KEY_WB_TEST
     );
   },
 };
