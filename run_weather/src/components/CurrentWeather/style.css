@@ -1,29 +1,44 @@
 @import url("../../index.css");
 
 .currentWeather {
-  border: 1px solid goldenrod;
-  margin: 0.25rem;
-  /* margin-bottom: 1rem; */
+  /* border: 1px solid goldenrod; */
+  box-shadow: var(--dark-color-secondary-shadow) 0px 0px 5px 0px;
+  /* margin: 0.25rem; */
+  margin-bottom: 1rem;
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  border-radius: 5px;
 }
 
 .currentLocation {
-  border: 1px solid gold;
+  /* border: 1px solid gold; */
   margin: 0.25rem;
+  padding: 0.25rem;
+}
+
+.currentLocation > h1 {
   text-transform: uppercase;
+  color: var(--light-text);
+  font-size: 40px;
 }
 
 .conditions {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid yellow;
-  margin: 0.1rem;
+  /* border: 1px solid yellow; */
+  /* margin: 1rem; */
+  padding: 1rem 0.5rem 1rem 0.5rem;
 }
 
 .condition {
-  border: 1px solid gold;
+  /* border: 1px solid gold; */
   margin: 0.25rem;
   flex-grow: 1;
+}
+
+.condition#icon {
+  border: 1px solid yellow;
 }
 
 li {

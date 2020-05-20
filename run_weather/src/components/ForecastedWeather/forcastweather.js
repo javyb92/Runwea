@@ -3,14 +3,14 @@ import API from "../../utils/API";
 import DaysAhead from "../daysAhead/daysAhead";
 import WeatherContext from "../../utils/context/WeatherContext";
 import ForecastContext from "../../utils/context/ForecastContext";
-import "./style.css";
+// import "./style.css";
 
 //AXIOS CALL
 
 //Map Out Incoming Responses for Forcasted Weather
 
 //Use Momentjs somehow to configure forcasted dates
-
+// HAH
 //Color Code days to decide good day to run
 
 const ForcastedWeather = () => {

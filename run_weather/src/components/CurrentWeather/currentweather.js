@@ -22,9 +22,12 @@ function CurrentWeather() {
   return (
     <div className="currentWeather">
       <div className="currentLocation">
-        <h2>{Location}</h2>
+        <h1>{Location}</h1>
       </div>
       <div className="conditions">
+        <div className="condition" id="icon">
+          PICTURE HERE
+        </div>
         <div className="condition">
           <ul>
             <h2>

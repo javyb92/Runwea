@@ -12,12 +12,15 @@ const NextDay = (props) => {
       <h3>
         <Moment format="ddd">{thisDay.time}</Moment>
       </h3>
+      <div className="condition" id="icon">
+        PICTURE HERE
+      </div>
       <p>{thisDay.condition}</p>
       <p>
-        Hi {thisDay.hi} / Lo {thisDay.lo}
+        Hi {thisDay.hi}° / Lo {thisDay.lo}°
       </p>
-      <p>Humidity: {thisDay.humidity}</p>
-      <p>Wind: {thisDay.wind}</p>
+      <p>Humidity: {thisDay.humidity}%</p>
+      <p>Wind: {thisDay.wind} mph</p>
     </div>
   );
 };

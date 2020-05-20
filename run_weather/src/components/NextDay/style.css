@@ -1,7 +1,22 @@
 .nextDay {
-  border: 1px solid gold;
-  margin: 0.25rem;
+  /* border: 1px solid gold; */
+  background-color: var(--light-color-content);
+  box-shadow: var(--dark-color-secondary-shadow) 0px 0px 5px 0px;
+  margin: 1rem 0.25rem 1rem 0.25rem;
   width: 100%;
+  border-radius: 5px;
+  padding: 0.25rem;
+}
+
+.nextDay > h3 {
+  font-size: 24px;
+}
+
+.nextDay:nth-child(1) {
+  margin-left: 0rem;
+}
+.nextDay:nth-last-child(1) {
+  margin-right: 0rem;
 }
 
 .day,
