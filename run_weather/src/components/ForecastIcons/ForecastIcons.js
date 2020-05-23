@@ -46,7 +46,7 @@ const ForecastIcons = (props) => {
   } else if (todayicon === "50n") {
     return <img src={require("../../img/icons/icons/50n.png")}></img>;
   } else {
-    return <p>Icons are unavailable at this time...</p>;
+    return <p>Icons are unavailable at this time... Try again later</p>;
   }
 };
 
