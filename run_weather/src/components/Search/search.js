@@ -5,6 +5,7 @@ import Dashboard from "../DashBoard/dashboard";
 import logo from "../../img/logo.png";
 import API from "../../utils/API";
 import WeatherContext from "../../utils/context/WeatherContext";
+import WeatherIcon from "react-icons-weather";
 
 function Search() {
   const [userInput, setUserInput] = useState([]);
@@ -19,17 +20,20 @@ function Search() {
     lat: "",
     lon: "",
     uv: "",
+    IconCode: "",
   });
   // const [alert, setAlert] = useState([{ alerts: "" }]);
 
   useEffect(() => {
     API.getCurrentWeather(city).then((res) => {
+      console.log(res.data);
+      const IconCode = res.data.weather[0].icon;
       const Location = res.data.name;
       const CurrentTemperature = Math.round(res.data.main.temp);
       const HiToday = Math.round(res.data.main.temp_max);
       const LoToday = Math.round(res.data.main.temp_min);
       const Humidity = Math.round(res.data.main.humidity);
-      const Conditions = res.data.weather[0].main;
+      const Conditions = res.data.weather[0].description;
       const Wind = Math.round(res.data.wind.speed);
       const lat = res.data.coord.lat;
       const lon = res.data.coord.lon;
@@ -46,10 +50,13 @@ function Search() {
           uv: currentUV,
           lat: lat,
           lon: lon,
+          IconCode: IconCode,
         });
       });
     });
   }, [city]);
+
+  console.log(city);
 
   const findCity = (e) => {
     e.preventDefault();

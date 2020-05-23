@@ -20,19 +20,6 @@ export default {
         lon +
         "&cnt=1"
     );
-    // .then(
-    //   axios.get(
-    //     "https://api.weatherbit.io/v2.0/alerts?" +
-    //       "lat=" +
-    //       lat +
-    //       "&lon=" +
-    //       lon +
-    //       "&key=" +
-    //       process.env.REACT_APP_KEY_WB
-    //     // Below is test key, above is production
-    //     // process.env.REACT_APP_KEY_WB_TEST
-    //   )
-    // );
   },
 
   getForcastWeather: function (f_city) {
