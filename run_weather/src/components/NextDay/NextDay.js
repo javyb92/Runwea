@@ -15,7 +15,7 @@ const NextDay = (props) => {
         <Moment format="ddd">{thisDay.time}</Moment>
       </h3>
       <ForecastIcons icon={thisDay.icon} />
-      <p>{thisDay.condition}</p>
+      <p className="condition">{thisDay.condition}</p>
       <p>
         Hi {thisDay.hi}° / Lo {thisDay.lo}°
       </p>

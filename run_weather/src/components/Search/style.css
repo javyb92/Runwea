@@ -43,6 +43,7 @@ nav.container {
 
 .searched-cities {
   margin-top: 0.5rem;
+  justify-content: center;
   border: 1px solid var(--secondary-color);
 }
 
@@ -61,10 +62,10 @@ nav.container {
 
   .logospace {
     flex-direction: column;
+    /* font-family: "Viga", sans-serif; */
   }
 
-  .logospace,
-  h1 {
+  .logospace > h1 {
     color: var(--secondary-color);
     font-size: x-small;
   }

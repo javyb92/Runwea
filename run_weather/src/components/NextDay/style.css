@@ -6,10 +6,17 @@
   width: 100%;
   border-radius: 5px;
   padding: 0.25rem;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .nextDay > h3 {
   font-size: 24px;
+  font-family: "Viga", sans-serif;
+}
+
+.nextDay > img {
+  height: auto;
+  width: 5rem;
 }
 
 .nextDay:nth-child(1) {

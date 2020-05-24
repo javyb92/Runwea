@@ -35,11 +35,13 @@
   /* border: 1px solid gold; */
   margin: 0.25rem;
   flex-grow: 1;
+  text-transform: capitalize;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
-.condition#icon {
+/* .condition#icon {
   border: 1px solid yellow;
-}
+} */
 
 li {
   list-style-type: none;

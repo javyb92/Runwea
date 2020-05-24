@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import "./style.css";
 import "../SearchBar/style.css";
 import Dashboard from "../DashBoard/dashboard";
+import SearchedCities from "../Searched-Cities/Searched-Cities";
 import logo from "../../img/logo.png";
 import API from "../../utils/API";
 import WeatherContext from "../../utils/context/WeatherContext";
-import WeatherIcon from "react-icons-weather";
 
 function Search() {
   const [userInput, setUserInput] = useState([]);
@@ -61,7 +61,6 @@ function Search() {
   const findCity = (e) => {
     e.preventDefault();
     setCity(userInput);
-    // getAlert();
   };
 
   // const getAlert = (e) => {
@@ -77,6 +76,7 @@ function Search() {
   const onSubmit = (e) => {
     setUserInput(e.target.value);
   };
+
   return (
     <WeatherContext.Provider value={city}>
       <nav className="container">
@@ -97,9 +97,6 @@ function Search() {
               <i class="fa fa-search"></i>
             </button>
           </form>
-          <div className="searched-cities">
-            <p>searched cities</p>
-          </div>
         </div>
         <div className="githubInfo">
           <a href="https://github.com/javyb92" className="github-link">

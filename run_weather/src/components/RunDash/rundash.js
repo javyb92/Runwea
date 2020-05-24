@@ -11,8 +11,8 @@ function RunDashboard() {
   return (
     <div className="RunDashboard">
       <div className="runStatus">Run Status</div>
-      <div className="runCheck">Run UserCheck</div>
-      <div className="run7Days">Run 7 Days</div>
+      {/* <div className="runCheck">Run UserCheck</div>
+      <div className="run7Days">Run 7 Days</div> */}
     </div>
   );
 }

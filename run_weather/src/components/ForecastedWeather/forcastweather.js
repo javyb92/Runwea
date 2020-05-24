@@ -14,23 +14,23 @@ const ForcastedWeather = () => {
 
   const getForecast = () => {
     API.getForcastWeather(Location).then((res) => {
-      // console.log(res.data);
+      console.log(res.data);
       setForecast([
         {
           time: res.data.list[4].dt_txt,
-          icon: res.data.list[0].weather[0].icon,
+          icon: res.data.list[4].weather[0].icon,
           hi: Math.round(res.data.list[0].main.temp_max),
           lo: Math.round(res.data.list[4].main.temp_min),
-          condition: res.data.list[0].weather[0].main,
-          wind: Math.round(res.data.list[0].wind.speed),
-          humidity: res.data.list[0].main.humidity,
+          condition: res.data.list[4].weather[0].description,
+          wind: Math.round(res.data.list[4].wind.speed),
+          humidity: res.data.list[4].main.humidity,
         },
         {
           time: res.data.list[7].dt_txt,
-          icon: res.data.list[7].weather[0].icon,
+          icon: res.data.list[13].weather[0].icon,
           hi: Math.round(res.data.list[13].main.temp_max),
           lo: Math.round(res.data.list[9].main.temp_min),
-          condition: res.data.list[8].weather[0].main,
+          condition: res.data.list[13].weather[0].description,
           wind: Math.round(res.data.list[8].wind.speed),
           humidity: res.data.list[8].main.humidity,
         },
@@ -39,7 +39,7 @@ const ForcastedWeather = () => {
           icon: res.data.list[15].weather[0].icon,
           hi: Math.round(res.data.list[21].main.temp_max),
           lo: Math.round(res.data.list[17].main.temp_min),
-          condition: res.data.list[16].weather[0].main,
+          condition: res.data.list[15].weather[0].description,
           wind: Math.round(res.data.list[16].wind.speed),
           humidity: res.data.list[16].main.humidity,
         },
@@ -48,7 +48,7 @@ const ForcastedWeather = () => {
           icon: res.data.list[23].weather[0].icon,
           hi: Math.round(res.data.list[29].main.temp_max),
           lo: Math.round(res.data.list[25].main.temp_min),
-          condition: res.data.list[24].weather[0].main,
+          condition: res.data.list[23].weather[0].description,
           wind: Math.round(res.data.list[24].wind.speed),
           humidity: res.data.list[24].main.humidity,
         },
@@ -57,7 +57,7 @@ const ForcastedWeather = () => {
           icon: res.data.list[31].weather[0].icon,
           hi: Math.round(res.data.list[37].main.temp_max),
           lo: Math.round(res.data.list[33].main.temp_min),
-          condition: res.data.list[32].weather[0].main,
+          condition: res.data.list[31].weather[0].description,
           wind: Math.round(res.data.list[32].wind.speed),
           humidity: res.data.list[32].main.humidity,
         },
