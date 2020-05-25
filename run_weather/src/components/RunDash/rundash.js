@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import RunData from "../RunData/RunData";
 
 //Use conditions based on call to colorcode the Run Status Box
 
@@ -10,7 +11,8 @@ import "./style.css";
 function RunDashboard() {
   return (
     <div className="RunDashboard">
-      <div className="runStatus">Run Status</div>
+      <RunData />
+      {/* <div className="runStatus">Run Status</div> */}
       {/* <div className="runCheck">Run UserCheck</div>
       <div className="run7Days">Run 7 Days</div> */}
     </div>

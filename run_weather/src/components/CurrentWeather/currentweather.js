@@ -2,16 +2,12 @@ import React, { useContext, useState, useEffect } from "react";
 import "./style.css";
 import WeatherContext from "../../utils/context/WeatherContext";
 import WeatherAlert from "../WeatherAlert/WeatherAlert";
-import icon from "../../img/icons/icons/01d.png";
-import WeatherIcon from "react-icons-weather";
 import WeatherIcons from "../WeatherIcon/WeatherIcon";
-
-//AXIOS CALL to get weather
 
 //WEATHERWARNING will be determined by actual warnings in area, if not block will disappear
 
 const CurrentWeather = () => {
-  const [code, setCode] = useState("600");
+  const [code, setCode] = useState("0");
   const {
     Location,
     CurrentTemperature,
@@ -32,10 +28,6 @@ const CurrentWeather = () => {
     setCode(IconCode);
   };
 
-  // setCode(IconCode);
-
-  console.log(code);
-
   return (
     <div className="currentWeather">
       <div className="currentLocation">
@@ -43,11 +35,8 @@ const CurrentWeather = () => {
       </div>
       <div className="conditions">
         <div className="condition" id="icon">
-          {/* <WeatherIcon name="owm" iconId={code} flip="horizontal" rotate="90" /> */}
           <WeatherIcons code={IconCode} />
         </div>
-        {/* <img className="logo" src={logo}></img> */}
-
         <div className="condition">
           <ul>
             <h2>

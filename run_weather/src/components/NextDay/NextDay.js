@@ -4,10 +4,7 @@ import "./style.css";
 import ForecastIcons from "../ForecastIcons/ForecastIcons";
 
 const NextDay = (props) => {
-  // console.log(this.props);
   const thisDay = props.app;
-
-  console.log(thisDay);
 
   return (
     <div className="nextDay">
@@ -15,7 +12,9 @@ const NextDay = (props) => {
         <Moment format="ddd">{thisDay.time}</Moment>
       </h3>
       <ForecastIcons icon={thisDay.icon} />
-      <p className="condition">{thisDay.condition}</p>
+      <strong>
+        <p className="condition">{thisDay.condition}</p>
+      </strong>
       <p>
         Hi {thisDay.hi}° / Lo {thisDay.lo}°
       </p>

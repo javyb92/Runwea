@@ -3,11 +3,7 @@ import ForecastContext from "../../utils/context/ForecastContext";
 import "./style.css";
 
 const ForecastIcons = (props) => {
-  //   const { icon } = useContext(ForecastContext);
-
   const todayicon = props.icon;
-  console.log(props.icon);
-  //   console.log(ForecastContext);
 
   if (todayicon === "01d") {
     return <img src={require("../../img/icons/icons/01d.png")}></img>;

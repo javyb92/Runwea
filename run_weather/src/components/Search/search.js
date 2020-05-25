@@ -56,8 +56,6 @@ function Search() {
     });
   }, [city]);
 
-  console.log(city);
-
   const findCity = (e) => {
     e.preventDefault();
     setCity(userInput);
