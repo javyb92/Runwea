@@ -5,9 +5,10 @@ import ForecastIcons from "../ForecastIcons/ForecastIcons";
 
 const NextDay = (props) => {
   const thisDay = props.app;
-  const number = props.value;
 
   //Use Time, Icon, Condition, Hi, Lo tto determine Color of card
+
+  console.log(thisDay);
 
   return (
     <div className="nextDay">
