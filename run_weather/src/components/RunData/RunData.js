@@ -1,82 +1,119 @@
 import React, { useContext, useState, useEffect } from "react";
 import WeatherContext from "../../utils/context/WeatherContext";
+import RunStatusCard from "../RunStatusCard/RunStatusCard";
 import "./style.css";
 
-function RunData() {
+const RunData = (props) => {
   const city = useContext(WeatherContext);
   const [value, setValue] = useState(0);
+  const [ctmessage, setCTMessage] = useState("");
+  const [htmessage, setHTMessage] = useState("");
+  const [ltmessage, setLTMessage] = useState("");
+  const [hmdmessage, setHMDMessage] = useState("");
+  const [uvmessage, setUVMessage] = useState("");
 
   useEffect(() => {
     getValue();
+    getMessages();
   }, [city]);
+
+  //make seperate messages with each value
 
   const getValue = () => {
     setValue(0);
-    //Current Temperature//
+    //CURRENT TEMP//
     if (city.CurrentTemperature > 90) {
       setValue((value) => value + 1);
-      console.log("Too Hot Right Now");
     } else if (city.CurrentTemperature < 35) {
       setValue((value) => value + 1);
-      console.log("Too Cold Right Now");
     } else {
       setValue((value) => value + 0);
-      console.log("Good Temperature");
     }
-    //Hi Temperaature//
+    //HI TEMP//
     if (city.HiToday > 90) {
       setValue((value) => value + 1);
-      console.log("Expected to be Hot");
     } else if (city.HiToday < 35) {
       setValue((value) => value + 1);
-      console.log("Expected to be Cold");
     } else {
       setValue((value) => value + 0);
-      console.log("Good Temperature Expected Today");
     }
-    //Lo Temperature//
+    //LO TEMP//
     if (city.LoToday > 50) {
       setValue((value) => value + 1);
-      console.log("Good to Run Anytime");
     } else if (city.LoToday < 35) {
       setValue((value) => value + 1);
-      console.log("It will be too Cold to run at certain hours");
     } else {
       setValue((value) => value + 0);
-      console.log("Not Expected to be too Cold anytime");
     }
     //HUMIDITY//
     if (city.Humidity > 60) {
       setValue((value) => value + 1);
-      console.log("Hydrate, Drink Electorlytes, or plan on running later");
     } else {
       setValue((value) => value + 0);
-      console.log("Not too humid");
     }
     //UV //
     if (city.uv > 6) {
       setValue((value) => value + 1);
-      console.log("UV Levels are high");
     } else {
       setValue((value) => value + 0);
-      console.log("Low UV");
     }
     //WIND//
     if (city.Wind > 6) {
       setValue((value) => value + 1);
-      console.log("High Winds");
     } else {
       setValue((value) => value + 0);
-      console.log("Winds are low");
     }
   };
 
-  console.log(city);
+  const getMessages = () => {
+    //CURRENT TEMP//
+    if (city.CurrentTemperature > 90) {
+      setCTMessage("Too Hot");
+    } else if (city.CurrentTemperature < 35) {
+      setCTMessage("Too Cold");
+    } else {
+      setCTMessage("");
+    }
+    //HI TEMP//
+    if (city.HiToday > 90) {
+      setHTMessage("Expected to be Hot");
+    } else if (city.HiToday < 35) {
+      setHTMessage("Expected to be Cold");
+    } else {
+      setHTMessage("");
+    }
+    //LO TEMP//
+    if (city.LoToday > 50) {
+      setLTMessage("");
+    } else if (city.LoToday < 35) {
+      setLTMessage("It will be too Cold to run at certain hours");
+    } else {
+      setLTMessage("");
+    }
+    //HUMIDITY//
+    if (city.Humidity > 60) {
+      setHMDMessage("Hydrate plenty, or plan on running later");
+    } else {
+      setHMDMessage("");
+    }
+    //UV //
+    if (city.uv > 6) {
+      setUVMessage("UV Levels are high");
+    } else {
+      setUVMessage("");
+    }
+  };
+
   return (
-    <div className="runStatus" key={0}>
-      {value}
-    </div>
+    <RunStatusCard
+      number={value}
+      currenttemp={ctmessage}
+      hitemp={htmessage}
+      lotemp={ltmessage}
+      humidity={hmdmessage}
+      uv={uvmessage}
+    />
   );
-}
+};
 
 export default RunData;

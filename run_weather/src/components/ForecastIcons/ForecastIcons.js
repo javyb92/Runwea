@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import ForecastContext from "../../utils/context/ForecastContext";
+import React from "react";
 import "./style.css";
 
 const ForecastIcons = (props) => {
