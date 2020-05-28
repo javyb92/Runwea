@@ -24,7 +24,7 @@ const RunStatusCard = (props) => {
     return (
       <div
         className="runStatus"
-        style={{ backgroundColor: "red", color: "white" }}
+        style={{ backgroundColor: "#7e0600", color: "white" }}
       >
         <h3>CURRENT CONDITION</h3>
         <img src={require("../../img/icons/icons/STOP.png")}></img>
@@ -36,7 +36,7 @@ const RunStatusCard = (props) => {
     return (
       <div
         className="runStatus"
-        style={{ backgroundColor: "orange", color: "white" }}
+        style={{ backgroundColor: "#dc4d00", color: "white" }}
       >
         <h3>CURRENT CONDITION</h3>
         <img src={require("../../img/icons/icons/MOREWARNING.png")}></img>
@@ -50,7 +50,7 @@ const RunStatusCard = (props) => {
     return (
       <div
         className="runStatus"
-        style={{ backgroundColor: "yellow", color: "white" }}
+        style={{ backgroundColor: "#ffd000", color: "white" }}
       >
         <h3>CURRENT CONDITION</h3>
 
@@ -65,7 +65,7 @@ const RunStatusCard = (props) => {
     return (
       <div
         className="runStatus"
-        style={{ backgroundColor: "green", color: "white" }}
+        style={{ backgroundColor: "#30bf0c", color: "white" }}
       >
         <h3>CURRENT CONDITION</h3>
 
@@ -80,7 +80,7 @@ const RunStatusCard = (props) => {
     return (
       <div
         className="runStatus"
-        style={{ backgroundColor: "blue", color: "white" }}
+        style={{ backgroundColor: "#007bb1", color: "white" }}
       >
         <h3>CURRENT CONDITION</h3>
 
@@ -95,10 +95,12 @@ const RunStatusCard = (props) => {
     return (
       <div
         className="runStatus"
-        style={{ backgroundColor: "cyan", color: "white" }}
+        style={{ backgroundColor: "#007bb1", color: "white" }}
       >
         <h3>CURRENT CONDITION</h3>
 
+        <img src={require("../../img/icons/icons/GO FAST.png")}></img>
+        <h3>PERFECT</h3>
         <ul>
           <li>{listMessages}</li>
         </ul>

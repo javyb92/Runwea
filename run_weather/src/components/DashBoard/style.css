@@ -32,7 +32,7 @@ main {
 
 @media (max-width: 426px) {
   /* Stack Grid Items */
-  Main {
+  main {
     display: flex;
     flex-direction: column;
   }
@@ -45,5 +45,16 @@ main {
   }
   section:nth-child(3) {
     order: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Stack Grid Items */
+  main {
+    padding: 2vmin;
+  }
+
+  .ForecastDash {
+    height: 50%;
   }
 }

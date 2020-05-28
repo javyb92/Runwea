@@ -8,6 +8,10 @@
   --dark-color-secondary-shadow: #4343437e;
   --dark-text: #050505;
   --max-width: 1100px;
+  --worst: #7e0600;
+  --poor: #dc4d00;
+  --fair: #ffd000;
+  --perfect: #007bb1;
 }
 
 * {
