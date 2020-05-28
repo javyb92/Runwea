@@ -2,17 +2,24 @@
 
 main {
   /* background-color: white; */
-  margin: 2vmin 10vmin 8vmin 10vmin;
-  padding: 2%;
+  /* margin: 8vmin; */
+  padding: 5vmin 8vmin 2vmin 8vmin;
   display: grid;
   grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
   column-gap: 0.25rem;
 }
 
 .WeatherDash {
   /* border: 1px solid red; */
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 0.25rem;
+}
+
+.ForecastDash {
+  display: grid;
+  grid-template-rows: 1fr;
   padding: 0.25rem;
 }
 
@@ -20,13 +27,23 @@ main {
   /* border: 1px solid red; */
   padding: 0.25rem;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 @media (max-width: 426px) {
   /* Stack Grid Items */
   Main {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+
+  section:nth-child(1) {
+    order: 2;
+  }
+  section:nth-child(2) {
+    order: 1;
+  }
+  section:nth-child(3) {
+    order: 3;
   }
 }

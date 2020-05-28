@@ -9,10 +9,12 @@ function Dashboard() {
     <main>
       <section className="WeatherDash">
         <CurrentWeather />
-        <ForcastedWeather />
       </section>
       <section className="RunDash">
         <RunDashboard />
+      </section>
+      <section className="ForecastDash">
+        <ForcastedWeather />
       </section>
     </main>
   );

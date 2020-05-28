@@ -38,6 +38,7 @@ function Search() {
       const lat = res.data.coord.lat;
       const lon = res.data.coord.lon;
       API.getUVIndex(lat, lon).then((res) => {
+        console.log(res.data);
         const currentUV = Math.round(res.data[0].value);
         setCity({
           Location: Location,

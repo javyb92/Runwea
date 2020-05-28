@@ -2,7 +2,7 @@
   /* border: 1px solid gold; */
   background-color: var(--light-color-content);
   box-shadow: var(--dark-color-secondary-shadow) 0px 0px 5px 0px;
-  margin: 1rem 0.25rem 1rem 0.25rem;
+  margin: 0.25rem;
   width: 100%;
   border-radius: 5px;
   padding: 0.25rem;
@@ -29,4 +29,11 @@
 .day,
 h3 {
   text-transform: uppercase;
+}
+
+@media (max-width: 426px) {
+  /* Stack Grid Items Correctly */
+  .nextDay {
+    margin: 0.25rem 0rem 0.25rem 0rem;
+  }
 }
