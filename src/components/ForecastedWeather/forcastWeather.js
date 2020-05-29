@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import API from "../../utils/API";
-import DaysAhead from "../daysAhead/daysAhead";
+import DaysAhead from "../daysahead/daysahead";
 import WeatherContext from "../../utils/context/WeatherContext";
 import ForecastContext from "../../utils/context/ForecastContext";
 

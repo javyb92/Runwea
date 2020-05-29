@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import useGeolocation from "react-hook-geolocation";
 import "./style.css";
-import "../SearchBar/style.css";
-import Dashboard from "../Dashboard/dashboard";
+import Dashboard from "../dashboard/dashboard";
 import logo from "../../img/logo.png";
 import API from "../../utils/API";
 import WeatherContext from "../../utils/context/WeatherContext";

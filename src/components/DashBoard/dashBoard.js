@@ -1,7 +1,7 @@
 import React from "react";
-import CurrentWeather from "../CurrentWeather/currentweather";
-import ForcastedWeather from "../ForecastedWeather/forcastWeather";
-import RunDashboard from "../RunDash/runDash";
+import CurrentWeather from "../currentweather/currentweather";
+import ForcastedWeather from "../forecastedweather/forcastweather";
+import RunDashboard from "../rundash/rundash";
 import "./style.css";
 
 function Dashboard() {

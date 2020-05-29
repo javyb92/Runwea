@@ -2,7 +2,6 @@ import React, { useState, useContext, useEffect } from "react";
 import "./style.css";
 import API from "../../utils/API";
 import WeatherContext from "../../utils/context/WeatherContext";
-import { render } from "@testing-library/react";
 
 const WeatherAlert = () => {
   const { lat, lon } = useContext(WeatherContext);

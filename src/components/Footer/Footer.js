@@ -3,7 +3,7 @@ import "./style.css";
 
 //ALL Axios calls will go down to this next day "card"
 
-function footer() {
+function Footer() {
   return (
     <footer>
       <p>
@@ -14,4 +14,4 @@ function footer() {
   );
 }
 
-export default footer;
+export default Footer;
