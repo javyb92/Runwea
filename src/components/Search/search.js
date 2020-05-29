@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "./node_modules/react";
-import useGeolocation from "./node_modules/react-hook-geolocation";
+import React, { useState, useEffect } from "react";
+import useGeolocation from "react-hook-geolocation";
 import "./style.css";
 import Dashboard from "../dashboard/dashboard";
 import logo from "../../img/logo.png";
