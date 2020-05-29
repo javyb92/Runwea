@@ -1,4 +1,4 @@
-import React from "./node_modules/react";
+import React from "react";
 import CurrentWeather from "../currentweather/currentweather";
 import ForcastedWeather from "../forecastedweather/forcastweather";
 import RunDashboard from "../rundash/rundash";
