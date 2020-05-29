@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import RunData from "../RunData/RunData";
+import RunData from "../RunData/runData";
 
 //Use conditions based on call to colorcode the Run Status Box
 

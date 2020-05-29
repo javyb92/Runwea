@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import WeatherContext from "../../utils/context/WeatherContext";
-import RunStatusCard from "../RunStatusCard/RunStatusCard";
+import RunStatusCard from "../RunStatusCard/runsatusCard";
 import "./style.css";
 
 const RunData = () => {

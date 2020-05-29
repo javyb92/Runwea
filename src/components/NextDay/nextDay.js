@@ -1,7 +1,7 @@
 import React from "react";
 import Moment from "react-moment";
 import "./style.css";
-import ForecastIcons from "../ForecastIcons/ForecastIcons";
+import ForecastIcons from "../ForecastIcons/forecastIcons";
 
 const NextDay = (props) => {
   const thisDay = props.app;

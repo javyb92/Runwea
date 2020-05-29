@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import ForecastContext from "../../utils/context/ForecastContext";
-import NextDay from "../NextDay/NextDay";
+import NextDay from "../NextDay/nextDay";
 import "./style.css";
 
 //ALL Axios calls will go down to this next day "card"
