@@ -5,6 +5,8 @@ footer {
   font-size: x-small;
   margin-top: 5rem;
   width: 100vw;
+  bottom: 0;
+  position: relative;
 }
 
 @media (max-width: 768px) {

@@ -61,7 +61,7 @@ const RunStatusCard = (props) => {
         </ul>
       </div>
     );
-  } else if (status <= 5) {
+  } else if (status >= 5) {
     return (
       <div
         className="runStatus"
