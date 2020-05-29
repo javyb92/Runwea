@@ -1,8 +1,8 @@
 import React, { useContext, useState, useEffect } from "react";
 import "./style.css";
 import WeatherContext from "../../utils/context/WeatherContext";
-import WeatherAlert from "../WeatherAlert/WeatherAlert";
-import WeatherIcons from "../WeatherIcon/WeatherIcon";
+import WeatherAlert from "../WeatherAlert/weatherAlert";
+import WeatherIcons from "../WeatherIcon/weatherIcon";
 
 //WEATHERWARNING will be determined by actual warnings in area, if not block will disappear
 
