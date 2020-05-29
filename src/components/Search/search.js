@@ -23,8 +23,6 @@ function Search() {
   });
   const geolocation = useGeolocation();
 
-  console.log(geolocation);
-
   useEffect(() => {
     getWeather();
   }, [city]);
