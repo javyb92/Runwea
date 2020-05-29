@@ -44,4 +44,15 @@ export default {
         process.env.REACT_APP_KEY_WB_TEST
     );
   },
+
+  getGeoLocCurrentWeather: function (glon, glat) {
+    return axios.get(
+      "https://api.openweathermap.org/data/2.5/weather?lat=" +
+        glat +
+        "&lon=" +
+        glon +
+        "&units=imperial&appid=" +
+        process.env.REACT_APP_KEY
+    );
+  },
 };

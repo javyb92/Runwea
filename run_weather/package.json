@@ -12,6 +12,8 @@
     "mongoose": "^5.9.9",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-geolocation": "^1.0.4",
+    "react-hook-geolocation": "^1.0.6",
     "react-icons-weather": "^1.0.5",
     "react-moment": "^0.9.7",
     "react-scripts": "3.4.1"
