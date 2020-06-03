@@ -56,5 +56,5 @@ I intend on releasing this for free (On Google Play) to have something on my nam
 
 4) The Backend - A user/sign up page Save total user mileage, create a default or list of areas for quick searching. Still thinking this one through.
 
-This was made and was showcase in "Coding With Friends 2020"!
+This was made and was showcased in "Coding With Friends 2020"!
 ![Screenshot](https://raw.githubusercontent.com/ScottKwang/CodeWithFriends-Spring2020/master/assets/images/banner_new.png)
