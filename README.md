@@ -31,7 +31,8 @@ Came out of BootCamp right before I started the project, I took 2-3 weeks relear
 2. Openweather API
 3. MomentJS
 4. CSS3 Flexbox & Grid
-5. More will be used when I expand!
+5. Paint.NET (To create my own weather icons)
+6.  More will be used when I expand! 
 
 ## How To Use
 
