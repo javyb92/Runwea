@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Runwea/static/css/main.4c45922e.chunk.css",
-    "main.js": "/Runwea/static/js/main.f9ba30f7.chunk.js",
-    "main.js.map": "/Runwea/static/js/main.f9ba30f7.chunk.js.map",
+    "main.css": "/Runwea/static/css/main.ef60ec91.chunk.css",
+    "main.js": "/Runwea/static/js/main.c5e5d18c.chunk.js",
+    "main.js.map": "/Runwea/static/js/main.c5e5d18c.chunk.js.map",
     "runtime-main.js": "/Runwea/static/js/runtime-main.4ebde4bd.js",
     "runtime-main.js.map": "/Runwea/static/js/runtime-main.4ebde4bd.js.map",
     "static/js/2.96ac6c00.chunk.js": "/Runwea/static/js/2.96ac6c00.chunk.js",
     "static/js/2.96ac6c00.chunk.js.map": "/Runwea/static/js/2.96ac6c00.chunk.js.map",
     "index.html": "/Runwea/index.html",
-    "precache-manifest.7691119d3de958922b019efd27969294.js": "/Runwea/precache-manifest.7691119d3de958922b019efd27969294.js",
+    "precache-manifest.6d0e073c0917d56107fd2b3088a2eb3a.js": "/Runwea/precache-manifest.6d0e073c0917d56107fd2b3088a2eb3a.js",
     "service-worker.js": "/Runwea/service-worker.js",
-    "static/css/main.4c45922e.chunk.css.map": "/Runwea/static/css/main.4c45922e.chunk.css.map",
+    "static/css/main.ef60ec91.chunk.css.map": "/Runwea/static/css/main.ef60ec91.chunk.css.map",
     "static/js/2.96ac6c00.chunk.js.LICENSE.txt": "/Runwea/static/js/2.96ac6c00.chunk.js.LICENSE.txt",
     "static/media/01d.png": "/Runwea/static/media/01d.1430ef66.png",
     "static/media/01n.png": "/Runwea/static/media/01n.060b9232.png",
@@ -40,7 +40,7 @@
   "entrypoints": [
     "static/js/runtime-main.4ebde4bd.js",
     "static/js/2.96ac6c00.chunk.js",
-    "static/css/main.4c45922e.chunk.css",
-    "static/js/main.f9ba30f7.chunk.js"
+    "static/css/main.ef60ec91.chunk.css",
+    "static/js/main.c5e5d18c.chunk.js"
   ]
 }

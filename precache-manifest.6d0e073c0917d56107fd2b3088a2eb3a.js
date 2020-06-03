@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b792a9d7b856067cedc6c25dd08ad11b",
+    "revision": "88b791bd701b541a08deaa47f4ef58c7",
     "url": "/Runwea/index.html"
   },
   {
-    "revision": "a03315c12d7151af3524",
-    "url": "/Runwea/static/css/main.4c45922e.chunk.css"
+    "revision": "32f9422771c831355d5b",
+    "url": "/Runwea/static/css/main.ef60ec91.chunk.css"
   },
   {
     "revision": "86f61d6260ac4db003d8",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Runwea/static/js/2.96ac6c00.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a03315c12d7151af3524",
-    "url": "/Runwea/static/js/main.f9ba30f7.chunk.js"
+    "revision": "32f9422771c831355d5b",
+    "url": "/Runwea/static/js/main.c5e5d18c.chunk.js"
   },
   {
     "revision": "7efe35efa9906d7a48c8",
