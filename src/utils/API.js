@@ -12,7 +12,7 @@ export default {
 
   getUVIndex: function (lat, lon) {
     return axios.get(
-      "http://api.openweathermap.org/data/2.5/uvi/forecast?appid=" +
+      "https://api.openweathermap.org/data/2.5/uvi/forecast?appid=" +
         process.env.REACT_APP_KEY +
         "&lat=" +
         lat +

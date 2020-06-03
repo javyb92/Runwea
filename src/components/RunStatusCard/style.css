@@ -10,3 +10,19 @@
   font-size: medium;
   font-family: "Roboto Condensed", sans-serif;
 }
+
+@media (max-width: 426px) {
+  /* Stack Grid Items */
+  .runStatus {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .runStatus > ul {
+    font-size: large;
+  }
+  .statusIcon > img {
+    width: 80px;
+    height: auto;
+  }
+}
