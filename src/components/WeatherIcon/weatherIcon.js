@@ -42,7 +42,7 @@ function WeatherIcons() {
   } else if (IconCode === "50n") {
     return <img src={require("../../img/icons/icons/50n.png")}></img>;
   } else {
-    return <p>Icons are unavailable at this time...</p>;
+    return null;
   }
 }
 

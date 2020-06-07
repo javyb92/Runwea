@@ -84,7 +84,7 @@ const RunStatusCard = (props) => {
         </ul>
       </div>
     );
-  } else if (status <= 3) {
+  } else if (status >= 1) {
     return (
       <div
         className="runStatus"
@@ -100,20 +100,13 @@ const RunStatusCard = (props) => {
         </ul>
       </div>
     );
-  } else {
+  } else if (status === 0) {
     return (
       <div
         className="runStatus"
-        style={{ backgroundColor: "#007bb1", color: "white" }}
+        style={{ backgroundColor: "#7e0600", color: "white" }}
       >
-        <div className="statusIcon">
-          <h3>CURRENT CONDITION</h3>
-          <img src={require("../../img/icons/icons/GO FAST.png")}></img>
-          <h3>PERFECT</h3>
-        </div>
-        <ul>
-          <li>{listMessages}</li>
-        </ul>
+        <p>CITY NOT FOUND, ENTER A VALID CITY OR TRY AGAIN LATER</p>
       </div>
     );
   }
