@@ -74,8 +74,8 @@ const RunStatusCard = (props) => {
         className="runStatus"
         style={{ backgroundColor: "#30bf0c", color: "white" }}
       >
-        <h3>CURRENT CONDITION</h3>
         <div className="statusIcon">
+          <h3>CURRENT CONDITION</h3>
           <img src={require("../../img/icons/icons/GO.png")}></img>
           <h3>GOOD</h3>
         </div>

@@ -95,11 +95,16 @@ function Search() {
 
   const findCity = (e) => {
     e.preventDefault();
-    setCity(userInput);
+    if (userInput == "") {
+      alert("Enter a city");
+    } else {
+      setCity(userInput);
+    }
   };
 
   const onSubmit = (e) => {
     setUserInput(e.target.value);
+    console.log(userInput);
   };
 
   return (
