@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Runwea/static/css/main.80870532.chunk.css",
-    "main.js": "/Runwea/static/js/main.420fe68d.chunk.js",
-    "main.js.map": "/Runwea/static/js/main.420fe68d.chunk.js.map",
+    "main.css": "/Runwea/static/css/main.53f3a88e.chunk.css",
+    "main.js": "/Runwea/static/js/main.ccee40a3.chunk.js",
+    "main.js.map": "/Runwea/static/js/main.ccee40a3.chunk.js.map",
     "runtime-main.js": "/Runwea/static/js/runtime-main.bdb00768.js",
     "runtime-main.js.map": "/Runwea/static/js/runtime-main.bdb00768.js.map",
-    "static/js/2.a1a2a62b.chunk.js": "/Runwea/static/js/2.a1a2a62b.chunk.js",
-    "static/js/2.a1a2a62b.chunk.js.map": "/Runwea/static/js/2.a1a2a62b.chunk.js.map",
+    "static/js/2.770faf2f.chunk.js": "/Runwea/static/js/2.770faf2f.chunk.js",
+    "static/js/2.770faf2f.chunk.js.map": "/Runwea/static/js/2.770faf2f.chunk.js.map",
     "index.html": "/Runwea/index.html",
-    "precache-manifest.0b66f75cec8b7d3d09d7912fcd7e837b.js": "/Runwea/precache-manifest.0b66f75cec8b7d3d09d7912fcd7e837b.js",
+    "precache-manifest.1c1c6476d9e9f9334ab52c3cf7c01f25.js": "/Runwea/precache-manifest.1c1c6476d9e9f9334ab52c3cf7c01f25.js",
     "service-worker.js": "/Runwea/service-worker.js",
-    "static/css/main.80870532.chunk.css.map": "/Runwea/static/css/main.80870532.chunk.css.map",
-    "static/js/2.a1a2a62b.chunk.js.LICENSE.txt": "/Runwea/static/js/2.a1a2a62b.chunk.js.LICENSE.txt",
+    "static/css/main.53f3a88e.chunk.css.map": "/Runwea/static/css/main.53f3a88e.chunk.css.map",
+    "static/js/2.770faf2f.chunk.js.LICENSE.txt": "/Runwea/static/js/2.770faf2f.chunk.js.LICENSE.txt",
     "static/media/01d.png": "/Runwea/static/media/01d.1430ef66.png",
     "static/media/01n.png": "/Runwea/static/media/01n.060b9232.png",
     "static/media/02d.png": "/Runwea/static/media/02d.ce60e2fb.png",
@@ -39,8 +39,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.bdb00768.js",
-    "static/js/2.a1a2a62b.chunk.js",
-    "static/css/main.80870532.chunk.css",
-    "static/js/main.420fe68d.chunk.js"
+    "static/js/2.770faf2f.chunk.js",
+    "static/css/main.53f3a88e.chunk.css",
+    "static/js/main.ccee40a3.chunk.js"
   ]
 }
