@@ -22,10 +22,12 @@ export default {
     );
   },
 
-  getForcastWeather: function (f_city) {
+  getForcastWeather: function (lat, lon) {
     return axios.get(
-      "https://api.openweathermap.org/data/2.5/forecast?q=" +
-        f_city +
+      "https://api.openweathermap.org/data/2.5/onecall?lat=" +
+        lat +
+        "&lon=" +
+        lon +
         "&units=imperial&appid=" +
         process.env.REACT_APP_KEY
     );

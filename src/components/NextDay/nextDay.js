@@ -13,7 +13,9 @@ const NextDay = (props) => {
   return (
     <div className="nextDay">
       <h3>
-        <Moment format="ddd">{thisDay.time}</Moment>
+        <Moment unix format="ddd">
+          {thisDay.time}
+        </Moment>
       </h3>
       <ForecastIcons icon={thisDay.icon} />
       <strong>
