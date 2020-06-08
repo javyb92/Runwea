@@ -5,19 +5,22 @@ import WeatherContext from "../../utils/context/WeatherContext";
 
 const WeatherAlert = () => {
   const { lat, lon } = useContext(WeatherContext);
-  // const [alert, setAlert] = useState([{}]);
+  const [alert, setAlert] = useState([]);
 
   // useEffect(() => {
-  //   weatherAlerts({});
+  //   weatherAlerts();
   // }, [lat, lon]);
 
   // const weatherAlerts = (e) => {
   //   API.getWeatherAlert(lat, lon).then((res) => {
-  //     setAlert([{ title: res.data.alerts }]);
+  //     setAlert([res.data]);
+  //     if (alert == [""]) {
+  //       console.log("No Alerts");
+  //     } else {
+  //       console.log(alert);
+  //     }
   //   });
   // };
-
-  // console.log(alert);
 
   return <div className="condition">Alerts >:(</div>;
 };
