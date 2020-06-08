@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Runwea/static/css/main.80870532.chunk.css",
-    "main.js": "/Runwea/static/js/main.2b5064bc.chunk.js",
-    "main.js.map": "/Runwea/static/js/main.2b5064bc.chunk.js.map",
+    "main.js": "/Runwea/static/js/main.63c97a82.chunk.js",
+    "main.js.map": "/Runwea/static/js/main.63c97a82.chunk.js.map",
     "runtime-main.js": "/Runwea/static/js/runtime-main.82047408.js",
     "runtime-main.js.map": "/Runwea/static/js/runtime-main.82047408.js.map",
     "static/js/2.8d125e51.chunk.js": "/Runwea/static/js/2.8d125e51.chunk.js",
     "static/js/2.8d125e51.chunk.js.map": "/Runwea/static/js/2.8d125e51.chunk.js.map",
     "index.html": "/Runwea/index.html",
-    "precache-manifest.e4bd2f3a0cba51111fc62da16c365cbe.js": "/Runwea/precache-manifest.e4bd2f3a0cba51111fc62da16c365cbe.js",
+    "precache-manifest.2408938d1330de67055a40a660103425.js": "/Runwea/precache-manifest.2408938d1330de67055a40a660103425.js",
     "service-worker.js": "/Runwea/service-worker.js",
     "static/css/main.80870532.chunk.css.map": "/Runwea/static/css/main.80870532.chunk.css.map",
     "static/js/2.8d125e51.chunk.js.LICENSE.txt": "/Runwea/static/js/2.8d125e51.chunk.js.LICENSE.txt",
@@ -41,6 +41,6 @@
     "static/js/runtime-main.82047408.js",
     "static/js/2.8d125e51.chunk.js",
     "static/css/main.80870532.chunk.css",
-    "static/js/main.2b5064bc.chunk.js"
+    "static/js/main.63c97a82.chunk.js"
   ]
 }
