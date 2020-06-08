@@ -42,7 +42,7 @@ function Search() {
       const lat = res.data.coord.lat;
       const lon = res.data.coord.lon;
       API.getUVIndex(lat, lon).then((res) => {
-        const currentUV = Math.round(res.data[0].value);
+        const currentUV = Math.round(res.data.data[0].uv);
         setCity({
           Location: Location,
           CurrentTemperature: CurrentTemperature,
@@ -62,7 +62,6 @@ function Search() {
 
   const getWeather = () => {
     API.getCurrentWeather(city).then((res) => {
-      console.log(res.data);
       const IconCode = res.data.weather[0].icon;
       const Location = res.data.name;
       const CurrentTemperature = Math.round(res.data.main.temp);
@@ -75,7 +74,7 @@ function Search() {
       const lon = res.data.coord.lon;
       API.getUVIndex(lat, lon).then((res) => {
         console.log(res.data);
-        const currentUV = Math.round(res.data[0].value);
+        const currentUV = Math.round(res.data.data[0].uv);
         setCity({
           Location: Location,
           CurrentTemperature: CurrentTemperature,

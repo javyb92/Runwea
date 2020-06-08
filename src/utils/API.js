@@ -12,13 +12,13 @@ export default {
 
   getUVIndex: function (lat, lon) {
     return axios.get(
-      "https://api.openweathermap.org/data/2.5/uvi/forecast?appid=" +
-        process.env.REACT_APP_KEY +
+      "https://api.weatherbit.io/v2.0/current?" +
         "&lat=" +
         lat +
         "&lon=" +
         lon +
-        "&cnt=1"
+        "&key=" +
+        process.env.REACT_APP_KEY_WB
     );
   },
 
