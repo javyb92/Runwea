@@ -93,6 +93,7 @@ function Search() {
 
   const findCity = (e) => {
     e.preventDefault();
+    // eslint-disable-next-line eqeqeq
     if (userInput == "") {
       alert("Enter a city");
     } else {
@@ -102,14 +103,13 @@ function Search() {
 
   const onSubmit = (e) => {
     setUserInput(e.target.value);
-    console.log(userInput);
   };
 
   return (
     <WeatherContext.Provider value={city}>
       <nav className="container">
         <div className="logospace">
-          <img className="logo" src={logo}></img>
+          <img className="logo" src={logo} alt="Runwea"></img>
           <h1>RUNWEA</h1>
         </div>
         <div className="search">

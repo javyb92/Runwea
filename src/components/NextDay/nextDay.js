@@ -7,9 +7,6 @@ const NextDay = (props) => {
   const thisDay = props.app;
 
   //Use Time, Icon, Condition, Hi, Lo tto determine Color of card
-
-  console.log(thisDay);
-
   return (
     <div className="nextDay">
       <h3>

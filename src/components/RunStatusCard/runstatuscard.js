@@ -12,13 +12,9 @@ const RunStatusCard = (props) => {
     props.uv,
   ];
 
-  console.log(status);
-
   const listMessages = messages.map((messages) => (
     <li key={messages}>{messages}</li>
   ));
-
-  console.log(messages);
 
   if (status >= 11) {
     return (
@@ -28,7 +24,7 @@ const RunStatusCard = (props) => {
       >
         <div className="statusIcon">
           <h3>CURRENT CONDITION</h3>
-          <img src={require("../../img/icons/icons/STOP.png")}></img>
+          <img src={require("../../img/icons/icons/STOP.png")} alt="Stop"></img>
           <h3>TERRIBLE, DON'T RUN</h3>
         </div>
         <ul>
@@ -44,7 +40,10 @@ const RunStatusCard = (props) => {
       >
         <div className="statusIcon">
           <h3>CURRENT CONDITION</h3>
-          <img src={require("../../img/icons/icons/MOREWARNING.png")}></img>
+          <img
+            src={require("../../img/icons/icons/MOREWARNING.png")}
+            alt="Poor"
+          ></img>
           <h3>POOR</h3>
         </div>
         <ul>
@@ -60,7 +59,10 @@ const RunStatusCard = (props) => {
       >
         <div className="statusIcon">
           <h3>CURRENT CONDITION</h3>
-          <img src={require("../../img/icons/icons/WARNING.png")}></img>
+          <img
+            src={require("../../img/icons/icons/WARNING.png")}
+            alt="Fair"
+          ></img>
           <h3>FAIR</h3>
         </div>
         <ul>
@@ -76,7 +78,7 @@ const RunStatusCard = (props) => {
       >
         <div className="statusIcon">
           <h3>CURRENT CONDITION</h3>
-          <img src={require("../../img/icons/icons/GO.png")}></img>
+          <img src={require("../../img/icons/icons/GO.png")} alt="Good"></img>
           <h3>GOOD</h3>
         </div>
         <ul>
@@ -92,7 +94,10 @@ const RunStatusCard = (props) => {
       >
         <div className="statusIcon">
           <h3>CURRENT CONDITION</h3>
-          <img src={require("../../img/icons/icons/GO FAST.png")}></img>
+          <img
+            src={require("../../img/icons/icons/GO FAST.png")}
+            alt="Perfect"
+          ></img>
           <h3>PERFECT</h3>
         </div>
         <ul>

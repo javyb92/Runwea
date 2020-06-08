@@ -1,13 +1,14 @@
-import React, { useContext, useState, useEffect } from "react";
+// import React, { useContext, useState, useEffect } from "react";
+import React, { useContext } from "react";
 import "./style.css";
 import WeatherContext from "../../utils/context/WeatherContext";
-import WeatherAlert from "../weatheralert/weatheralert";
+// import WeatherAlert from "../weatheralert/weatheralert";
 import WeatherIcons from "../weathericon/weathericon";
 
 //WEATHERWARNING will be determined by actual warnings in area, if not block will disappear
 
 const CurrentWeather = () => {
-  const [code, setCode] = useState("0");
+  // const [code, setCode] = useState("0");
   const {
     Location,
     CurrentTemperature,
@@ -20,13 +21,13 @@ const CurrentWeather = () => {
     IconCode,
   } = useContext(WeatherContext);
 
-  useEffect(() => {
-    getIcon();
-  }, [IconCode]);
+  // useEffect(() => {
+  //   getIcon();
+  // }, [IconCode]);
 
-  const getIcon = () => {
-    setCode(IconCode);
-  };
+  // const getIcon = () => {
+  //   setCode(IconCode);
+  // };
 
   return (
     <div className="currentWeather">
