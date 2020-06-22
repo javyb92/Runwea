@@ -21,11 +21,21 @@ function Search() {
     uv: "",
     IconCode: "",
   });
+  // const [gLat, setgLat] = useState();
+  // const [gLon, setgLon] = useState();
+
   const geolocation = useGeolocation();
 
   useEffect(() => {
     getWeather();
+    // geolocationCoord();
   }, [city]);
+
+  // const geolocationCoord = () => {
+  //   setgLat(geolocation.longitude);
+  //   setgLon(geolocation.latitude);
+  //   console.log(gLat, gLon);
+  // };
 
   const geolocationCity = () => {
     const glon = geolocation.longitude;
