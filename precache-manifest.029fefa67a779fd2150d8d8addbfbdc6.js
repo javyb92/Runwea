@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "07629a4fc8b695340eec8e82090aa5aa",
+    "revision": "587d8e115796cea803a63ecf62d793d7",
     "url": "/Runwea/index.html"
   },
   {
-    "revision": "6cd6315e9e929c989cef",
-    "url": "/Runwea/static/css/main.53f3a88e.chunk.css"
+    "revision": "a7c9d2eb0bb01ca3be68",
+    "url": "/Runwea/static/css/main.c37242aa.chunk.css"
   },
   {
-    "revision": "6a72b52f6c3356e675c9",
-    "url": "/Runwea/static/js/2.770faf2f.chunk.js"
+    "revision": "7ea4764972cf58f0a930",
+    "url": "/Runwea/static/js/2.a1a2a62b.chunk.js"
   },
   {
     "revision": "0a572ad323474bafc6a871b6336141bd",
-    "url": "/Runwea/static/js/2.770faf2f.chunk.js.LICENSE.txt"
+    "url": "/Runwea/static/js/2.a1a2a62b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6cd6315e9e929c989cef",
-    "url": "/Runwea/static/js/main.ccee40a3.chunk.js"
+    "revision": "a7c9d2eb0bb01ca3be68",
+    "url": "/Runwea/static/js/main.842d2e21.chunk.js"
   },
   {
     "revision": "3140fba72453f80d7e2d",
