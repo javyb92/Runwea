@@ -12,6 +12,7 @@ const WeatherContext = React.createContext({
   lon: "",
   uv: "",
   IconCode: "",
+  Main: "",
 });
 
 export default WeatherContext;

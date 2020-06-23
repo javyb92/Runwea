@@ -5,7 +5,13 @@
   box-shadow: var(--dark-color-secondary-shadow) 0px 0px 5px 0px;
   /* margin: 0.25rem; */
   margin-bottom: 0rem;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color);
+  background: rgb(48,191,12); */
+  background: linear-gradient(
+    180deg,
+    var(--primary-color) 15%,
+    rgba(61, 232, 18, 1) 100%
+  );
   color: var(--light-text);
   border-radius: 5px;
 }
@@ -41,8 +47,20 @@
   border: 1px solid yellow;
 } */
 
+/* #icon > img {
+  animation-duration: 5s;
+  animation-name: bigger;
+  animation-iteration-count: infinite;
+  position: sticky;
+} */
+
 li {
   list-style-type: none;
+}
+
+li.CurrentTemp {
+  font-size: x-large;
+  font-weight: bolder;
 }
 
 @media (max-width: 426px) {

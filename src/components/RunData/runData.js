@@ -11,6 +11,7 @@ const RunData = () => {
   const [ltmessage, setLTMessage] = useState("");
   const [hmdmessage, setHMDMessage] = useState("");
   const [uvmessage, setUVMessage] = useState("");
+  const [mainmessage, setMainMessage] = useState("");
 
   useEffect(() => {
     getValue();
@@ -111,6 +112,52 @@ const RunData = () => {
     } else {
       setValue((value) => value + 0);
     }
+    //MAIN//
+    if (city.Main == "Thunderstorm") {
+      setValue((value) => value + 20);
+      setMainMessage("CURRENT: THUNDERSTORM, STAY INDOORS.");
+    } else if (city.Main == "Tornado") {
+      setValue((value) => value + 20);
+      setMainMessage("CURRENT: TORNADO, SEEK SHELTER.");
+    } else if (city.Main == "Ash") {
+      setValue((value) => value + 20);
+      setMainMessage("CURRENT: ASH, SEEK SHELTER.");
+    } else if (city.Main == "Smoke") {
+      setValue((value) => value + 20);
+      setMainMessage("CURRENT: SMOKE, SEEK SHELTER.");
+    } else if (city.Main == "Sand") {
+      setValue((value) => value + 4);
+      setMainMessage("CURRENT: Sand, reccommend to stay indoors.");
+    } else if (city.Main == "Dust") {
+      setValue((value) => value + 4);
+      setMainMessage("CURRENT: Dust, reccommend to stay indoors.");
+    } else if (city.Main == "Squall") {
+      setValue((value) => value + 4);
+      setMainMessage("CURRENT: Squall, reccommend to stay indoors.");
+    } else if (city.Main == "Haze") {
+      setValue((value) => value + 4);
+      setMainMessage("CURRENT: Haze, reccommend to stay indoors.");
+    } else if (city.Main == "Snow") {
+      setValue((value) => value + 4);
+      setMainMessage("CURRENT: Snow, reccommend to stay indoors.");
+    } else if (city.Main == "Rain") {
+      setValue((value) => value + 3);
+      setMainMessage("CURRENT: Rain, reccommend to stay indoors.");
+    } else if (city.Main == "Drizzle") {
+      setValue((value) => value + 3);
+      setMainMessage("CURRENT: Drizzle, reccommend to stay indoors.");
+    } else if (city.Main == "Mist") {
+      setValue((value) => value + 2);
+      setMainMessage("CURRENT: Mist, be cautious while running.");
+    } else if (city.Main == "Fog") {
+      setValue((value) => value + 2);
+      setMainMessage(
+        "CURRENT: Fog, be cautious while running with limited visiblity."
+      );
+    } else {
+      setValue((value) => value + 1);
+      setMainMessage("");
+    }
   };
 
   return (
@@ -121,6 +168,7 @@ const RunData = () => {
       lotemp={ltmessage}
       humidity={hmdmessage}
       uv={uvmessage}
+      main={mainmessage}
     />
   );
 };

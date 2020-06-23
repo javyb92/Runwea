@@ -41,7 +41,7 @@ const CurrentWeather = () => {
         <div className="condition">
           <ul>
             <h2>
-              <li>{CurrentTemperature}°</li>
+              <li className="CurrentTemp">{CurrentTemperature}°</li>
               <li>{Conditions}</li>
               <li>
                 H {HiToday}° / L {LoToday}°

@@ -20,6 +20,7 @@ function Search() {
     lon: "",
     uv: "",
     IconCode: "",
+    Main: "",
   });
   // const [gLat, setgLat] = useState();
   // const [gLon, setgLon] = useState();
@@ -41,6 +42,7 @@ function Search() {
     const glon = geolocation.longitude;
     const glat = geolocation.latitude;
     API.getGeoLocCurrentWeather(glon, glat).then((res) => {
+      console.log(res.data);
       const IconCode = res.data.weather[0].icon;
       const Location = res.data.name;
       const CurrentTemperature = Math.round(res.data.main.temp);
@@ -51,6 +53,7 @@ function Search() {
       const Wind = Math.round(res.data.wind.speed);
       const lat = res.data.coord.lat;
       const lon = res.data.coord.lon;
+      const Main = res.data.weather[0].main;
       API.getUVIndex(lat, lon).then((res) => {
         const currentUV = Math.round(res.data.data[0].uv);
         setCity({
@@ -65,6 +68,7 @@ function Search() {
           lat: lat,
           lon: lon,
           IconCode: IconCode,
+          Main: Main,
         });
       });
     });
@@ -82,6 +86,7 @@ function Search() {
       const Wind = Math.round(res.data.wind.speed);
       const lat = res.data.coord.lat;
       const lon = res.data.coord.lon;
+      const Main = res.data.weather[0].main;
       API.getUVIndex(lat, lon).then((res) => {
         const currentUV = Math.round(res.data.data[0].uv);
         setCity({
@@ -96,6 +101,7 @@ function Search() {
           lat: lat,
           lon: lon,
           IconCode: IconCode,
+          Main: Main,
         });
       });
     });

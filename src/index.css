@@ -21,7 +21,12 @@
 }
 
 body {
-  background-color: var(--secondary-color);
+  /* background: var(--secondary-color); */
+  background: linear-gradient(
+    180deg,
+    var(--secondary-color) 25%,
+    rgba(255, 255, 255, 1) 100%
+  );
   line-height: 1.5;
   font-family: "Viga", sans-serif;
   -webkit-font-smoothing: antialiased;
