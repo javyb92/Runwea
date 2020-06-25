@@ -1,6 +1,6 @@
 {
-  "short_name": "Runwea",
-  "name": "Runwea",
+  "short_name": "RUNWEA",
+  "name": "RUNWEA",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#30bf0c",
+  "background_color": "#30bf0c"
 }
