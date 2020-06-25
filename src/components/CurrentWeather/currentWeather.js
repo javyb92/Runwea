@@ -8,7 +8,6 @@ import WeatherIcons from "../weathericon/weathericon";
 //WEATHERWARNING will be determined by actual warnings in area, if not block will disappear
 
 const CurrentWeather = () => {
-  // const [code, setCode] = useState("0");
   const {
     Location,
     CurrentTemperature,
@@ -20,14 +19,6 @@ const CurrentWeather = () => {
     uv,
     IconCode,
   } = useContext(WeatherContext);
-
-  // useEffect(() => {
-  //   getIcon();
-  // }, [IconCode]);
-
-  // const getIcon = () => {
-  //   setCode(IconCode);
-  // };
 
   return (
     <div className="currentWeather">

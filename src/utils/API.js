@@ -18,7 +18,19 @@ export default {
         "&lon=" +
         lon +
         "&key=" +
-        process.env.REACT_APP_KEY_WB_TEST
+        process.env.REACT_APP_KEY_WB
+    );
+  },
+
+  getAQIndex: function (lat, lon) {
+    return axios.get(
+      "https://api.weatherbit.io/v2.0/current/airquality" +
+        "&lat=" +
+        lat +
+        "&lon=" +
+        lon +
+        "&key=" +
+        process.env.REACT_APP_KEY_WB
     );
   },
 

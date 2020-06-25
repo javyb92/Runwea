@@ -22,27 +22,17 @@ function Search() {
     IconCode: "",
     Main: "",
   });
-  // const [gLat, setgLat] = useState();
-  // const [gLon, setgLon] = useState();
 
   const geolocation = useGeolocation();
 
   useEffect(() => {
     getWeather();
-    // geolocationCoord();
   }, [city]);
-
-  // const geolocationCoord = () => {
-  //   setgLat(geolocation.longitude);
-  //   setgLon(geolocation.latitude);
-  //   console.log(gLat, gLon);
-  // };
 
   const geolocationCity = () => {
     const glon = geolocation.longitude;
     const glat = geolocation.latitude;
     API.getGeoLocCurrentWeather(glon, glat).then((res) => {
-      console.log(res.data);
       const IconCode = res.data.weather[0].icon;
       const Location = res.data.name;
       const CurrentTemperature = Math.round(res.data.main.temp);
