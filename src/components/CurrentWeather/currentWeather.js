@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import "./style.css";
 import WeatherContext from "../../utils/context/WeatherContext";
-import WeatherAlert from "../weatheralert/weatheralert";
+// import WeatherAlert from "../weatheralert/weatheralert";
 import WeatherIcons from "../weathericon/weathericon";
 
 //WEATHERWARNING will be determined by actual warnings in area, if not block will disappear
@@ -49,7 +49,7 @@ const CurrentWeather = () => {
             </h2>
           </ul>
         </div>
-        <WeatherAlert />
+        {/* <WeatherAlert /> */}
       </div>
     </div>
   );

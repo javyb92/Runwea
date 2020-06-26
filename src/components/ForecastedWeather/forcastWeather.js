@@ -14,7 +14,7 @@ const ForcastedWeather = () => {
 
   const getForecast = () => {
     API.getForcastWeather(lat, lon).then((res) => {
-      console.log(res.data);
+      // console.log(res.data);
       setForecast([
         {
           time: res.data.daily[1].dt,

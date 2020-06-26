@@ -11,6 +11,7 @@ const RunStatusCard = (props) => {
     props.humidity,
     props.uv,
     props.main,
+    props.wind,
   ];
 
   const listMessages = messages.map((messages) => (

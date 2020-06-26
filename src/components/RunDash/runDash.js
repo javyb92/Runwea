@@ -2,12 +2,6 @@ import React from "react";
 import "./style.css";
 import RunData from "../rundata/rundata";
 
-//Use conditions based on call to colorcode the Run Status Box
-
-//User Check will be a simple Yes or No button
-
-//Run Last 7 Days
-
 function RunDashboard() {
   return (
     <div className="RunDashboard">

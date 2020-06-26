@@ -123,7 +123,7 @@ function Search() {
             <input
               type="text"
               className="searchTerm"
-              placeholder="Search for your area"
+              placeholder="Search for an area"
               value={userInput}
               onChange={onSubmit}
             />

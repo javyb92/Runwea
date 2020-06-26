@@ -8,6 +8,7 @@
 
 .runStatus > ul {
   font-size: medium;
+  font-weight: bold;
   font-family: "Roboto Condensed", sans-serif;
 }
 
