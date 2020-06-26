@@ -135,11 +135,11 @@ function Search() {
             <i class="fas fa-globe"></i>
           </button>
         </div>
-        <div className="githubInfo">
+        {/* <div className="githubInfo">
           <a href="https://github.com/javyb92" className="github-link">
             <i class="fab fa-github-square"></i>
           </a>
-        </div>
+        </div> */}
       </nav>
       <Dashboard />
     </WeatherContext.Provider>
