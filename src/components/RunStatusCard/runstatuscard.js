@@ -15,7 +15,7 @@ const RunStatusCard = (props) => {
   ];
 
   const listMessages = messages.map((messages) => (
-    <li key={messages}>{messages}</li>
+    <p key={messages}>{messages}</p>
   ));
 
   if (status >= 11) {
@@ -29,9 +29,7 @@ const RunStatusCard = (props) => {
           <img src={require("../../img/icons/icons/STOP.png")} alt="Stop"></img>
           <h3>TERRIBLE, DON'T RUN</h3>
         </div>
-        <ul>
-          <li>{listMessages}</li>
-        </ul>
+        <p>{listMessages}</p>
       </div>
     );
   } else if (status >= 9) {
@@ -48,9 +46,7 @@ const RunStatusCard = (props) => {
           ></img>
           <h3>POOR</h3>
         </div>
-        <ul>
-          <li>{listMessages}</li>
-        </ul>
+        <p>{listMessages}</p>
       </div>
     );
   } else if (status >= 7) {
@@ -67,9 +63,7 @@ const RunStatusCard = (props) => {
           ></img>
           <h3>FAIR</h3>
         </div>
-        <ul>
-          <li>{listMessages}</li>
-        </ul>
+        <p>{listMessages}</p>
       </div>
     );
   } else if (status >= 5) {
@@ -83,9 +77,7 @@ const RunStatusCard = (props) => {
           <img src={require("../../img/icons/icons/GO.png")} alt="Good"></img>
           <h3>GOOD</h3>
         </div>
-        <ul>
-          <li>{listMessages}</li>
-        </ul>
+        <p>{listMessages}</p>
       </div>
     );
   } else if (status >= 1) {
@@ -102,9 +94,7 @@ const RunStatusCard = (props) => {
           ></img>
           <h3>PERFECT</h3>
         </div>
-        <ul>
-          <li>{listMessages}</li>
-        </ul>
+        <p>{listMessages}</p>
       </div>
     );
   } else if (status === 0) {

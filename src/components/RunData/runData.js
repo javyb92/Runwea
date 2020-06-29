@@ -88,17 +88,14 @@ const RunData = () => {
       setValue((value) => value + 5);
       setWindMessage("WIND: STORM WINDS 39MPH OR MORE");
     } else if (city.Wind >= 27) {
-      setValue((value) => value + 4);
+      setValue((value) => value + 3);
       setWindMessage("WIND: Very High Winds Will Impact Run");
     } else if (city.Wind >= 19) {
-      setValue((value) => value + 3);
+      setValue((value) => value + 2);
       setWindMessage("WIND: Winds May Impact Run");
     } else if (city.Wind >= 12) {
-      setValue((value) => value + 2);
-      setWindMessage("WIND: Moderate Breeze, dust and particles in air ");
-    } else if (city.Wind >= 6) {
       setValue((value) => value + 1);
-      setWindMessage("WIND: Slight Breeze ");
+      setWindMessage("WIND: Moderate Breeze, dust and particles in air ");
     } else {
       setValue((value) => value + 0);
       setWindMessage("");
@@ -106,45 +103,43 @@ const RunData = () => {
     //MAIN//
     if (city.Main === "Thunderstorm") {
       setValue((value) => value + 20);
-      setMainMessage("CURRENT: THUNDERSTORM, STAY INDOORS.");
+      setMainMessage("THUNDERSTORM: STAY INDOORS.");
     } else if (city.Main === "Tornado") {
       setValue((value) => value + 20);
-      setMainMessage("CURRENT: TORNADO, SEEK SHELTER.");
+      setMainMessage("TORNADO: SEEK SHELTER.");
     } else if (city.Main === "Ash") {
       setValue((value) => value + 20);
-      setMainMessage("CURRENT: ASH, SEEK SHELTER.");
+      setMainMessage("ASH: SEEK SHELTER.");
     } else if (city.Main === "Smoke") {
       setValue((value) => value + 20);
-      setMainMessage("CURRENT: SMOKE, SEEK SHELTER.");
+      setMainMessage("SMOKE: SEEK SHELTER.");
     } else if (city.Main === "Sand") {
       setValue((value) => value + 4);
-      setMainMessage("CURRENT: Sand, recommended to stay indoors.");
+      setMainMessage("SAND: Recommended to stay indoors.");
     } else if (city.Main === "Dust") {
       setValue((value) => value + 4);
-      setMainMessage("CURRENT: Dust, recommended to stay indoors.");
+      setMainMessage("DUST: Recommended to stay indoors.");
     } else if (city.Main === "Squall") {
       setValue((value) => value + 4);
-      setMainMessage("CURRENT: Squall, recommended to stay indoors.");
+      setMainMessage("SQUALL: Recommended to stay indoors.");
     } else if (city.Main === "Haze") {
       setValue((value) => value + 4);
-      setMainMessage("CURRENT: Haze, recommended to stay indoors.");
+      setMainMessage("HAZE: Recommended to stay indoors.");
     } else if (city.Main === "Snow") {
       setValue((value) => value + 4);
-      setMainMessage("CURRENT: Snow, recommended to stay indoors.");
+      setMainMessage("SNOW: Recommended to stay indoors.");
     } else if (city.Main === "Rain") {
       setValue((value) => value + 3);
-      setMainMessage("CURRENT: Rain, recommended to stay indoors.");
+      setMainMessage("RAIN: Recommended to stay indoors.");
     } else if (city.Main === "Drizzle") {
       setValue((value) => value + 3);
-      setMainMessage("CURRENT: Drizzle, recommended to stay indoors.");
+      setMainMessage("DRIZZLE: Recommended to stay indoors.");
     } else if (city.Main === "Mist") {
       setValue((value) => value + 2);
-      setMainMessage("CURRENT: Mist, be cautious while running.");
+      setMainMessage("MIST: Be cautious while running.");
     } else if (city.Main === "Fog") {
       setValue((value) => value + 2);
-      setMainMessage(
-        "CURRENT: Fog, be cautious while running with limited visiblity."
-      );
+      setMainMessage("FOG: Be cautious while running with limited visiblity.");
     } else {
       setValue((value) => value + 1);
       setMainMessage("");

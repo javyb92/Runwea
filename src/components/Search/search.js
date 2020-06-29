@@ -119,19 +119,25 @@ function Search() {
           <h1>RUNWEA</h1>
         </div>
         <div className="search">
-          <form onSubmit={findCity} className="searchbar">
+          <form onSubmit={findCity} className="searchbar" id="Find-Area-Form">
             <input
               type="text"
               className="searchTerm"
               placeholder="Search for an area"
+              label="search"
               value={userInput}
               onChange={onSubmit}
+              id="Find-Area"
             />
-            <button type="submit" className="searchButton">
+            <button type="submit" className="searchButton" aria-label="Search">
               <i class="fa fa-search"></i>
             </button>
           </form>
-          <button className="geo" onClick={geolocationCity}>
+          <button
+            className="geo"
+            onClick={geolocationCity}
+            aria-label="Geo-Detect"
+          >
             <i class="fas fa-globe"></i>
           </button>
         </div>

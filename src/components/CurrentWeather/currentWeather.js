@@ -30,24 +30,20 @@ const CurrentWeather = () => {
           <WeatherIcons code={IconCode} />
         </div>
         <div className="condition">
-          <ul>
-            <h2>
-              <li className="CurrentTemp">{CurrentTemperature}°</li>
-              <li>{Conditions}</li>
-              <li>
-                H {HiToday}° / L {LoToday}°
-              </li>
-            </h2>
-          </ul>
+          <h2>
+            <p className="CurrentTemp">{CurrentTemperature}°</p>
+            <p>{Conditions}</p>
+            <p>
+              H {HiToday}° / L {LoToday}°
+            </p>
+          </h2>
         </div>
         <div className="condition">
-          <ul>
-            <h2>
-              <li>Humidity: {Humidity}%</li>
-              <li>Wind: {Wind} mph</li>
-              <li>UV Index: {uv}</li>
-            </h2>
-          </ul>
+          <h2>
+            <p>Humidity: {Humidity}%</p>
+            <p>Wind: {Wind} mph</p>
+            <p>UV Index: {uv}</p>
+          </h2>
         </div>
         {/* <WeatherAlert /> */}
       </div>

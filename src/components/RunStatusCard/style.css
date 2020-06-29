@@ -6,7 +6,7 @@
   padding: 0.25rem;
 }
 
-.runStatus > ul {
+.runStatus > p {
   font-size: medium;
   font-weight: bold;
   font-family: "Roboto Condensed", sans-serif;

@@ -9,20 +9,22 @@ const NextDay = (props) => {
   //Use Time, Icon, Condition, Hi, Lo tto determine Color of card
   return (
     <div className="nextDay">
-      <h3>
-        <Moment unix format="ddd">
-          {thisDay.time}
-        </Moment>
-      </h3>
-      <ForecastIcons icon={thisDay.icon} />
-      <strong>
-        <p className="condition">{thisDay.condition}</p>
-      </strong>
-      <p>
-        Hi {thisDay.hi}° / Lo {thisDay.lo}°
-      </p>
-      <p>Humidity: {thisDay.humidity}%</p>
-      <p>Wind: {thisDay.wind} mph</p>
+      <div>
+        <h3>
+          <Moment unix format="ddd">
+            {thisDay.time}
+          </Moment>
+        </h3>
+        <ForecastIcons icon={thisDay.icon} />
+        <strong>
+          <p className="condition">{thisDay.condition}</p>
+        </strong>
+        <p>
+          Hi {thisDay.hi}° / Lo {thisDay.lo}°
+        </p>
+        <p>Humidity: {thisDay.humidity}%</p>
+        <p>Wind: {thisDay.wind} mph</p>
+      </div>
     </div>
   );
 };

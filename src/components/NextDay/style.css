@@ -5,24 +5,27 @@
   margin: 0.25rem;
   width: 100%;
   border-radius: 5px;
-  padding: 0.25rem;
+  padding: 2rem;
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.nextDay > h3 {
-  font-size: 32px;
+.nextDay > div > h3 {
+  font-size: 36px;
   font-family: "Viga", sans-serif;
 }
-
-.nextDay > img {
-  height: auto;
-  width: 5rem;
+.nextDay > div > p {
+  font-size: large;
 }
 
-.nextDay:nth-child(1) {
+.nextDay > div > img {
+  height: auto;
+  width: 6rem;
+}
+
+.nextDay > div:nth-child(1) {
   margin-left: 0rem;
 }
-.nextDay:nth-last-child(1) {
+.nextDay > div:nth-last-child(1) {
   margin-right: 0rem;
 }
 
