@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import "./style.css";
 import WeatherContext from "../../utils/context/WeatherContext";
-// import WeatherAlert from "../weatheralert/weatheralert";
+import WeatherAlert from "../weatheralert/weatheralert";
 import WeatherIcons from "../weathericon/weathericon";
 
 //WEATHERWARNING will be determined by actual warnings in area, if not block will disappear
@@ -24,6 +24,7 @@ const CurrentWeather = () => {
     <div className="currentWeather">
       <div className="currentLocation">
         <h1>{Location}</h1>
+        <WeatherAlert />
       </div>
       <div className="conditions">
         <div className="condition" id="icon">
@@ -45,7 +46,6 @@ const CurrentWeather = () => {
             <p>UV Index: {uv}</p>
           </h2>
         </div>
-        {/* <WeatherAlert /> */}
       </div>
     </div>
   );

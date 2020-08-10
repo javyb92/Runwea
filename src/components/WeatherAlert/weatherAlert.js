@@ -6,22 +6,29 @@ import WeatherContext from "../../utils/context/WeatherContext";
 const WeatherAlert = () => {
   const { lat, lon } = useContext(WeatherContext);
   const [alert, setAlert] = useState([]);
+  const [alertAmount, setAlertAmount] = useState();
 
   useEffect(() => {
     weatherAlerts();
   }, [lat, lon]);
-
   const weatherAlerts = (e) => {
     API.getWeatherAlert(lat, lon).then((res) => {
-      setAlert(res.data);
+      try {
+        setAlert(res.data.alerts[0].title);
+        setAlertAmount(res.data.alerts.length);
+        console.log(res.data);
+      } catch {
+        setAlert(" ");
+        setAlertAmount(" ");
+      }
     });
   };
 
-  console.log(alert.alerts);
-
   return (
-    <div className="condition">
-      <p></p>
+    <div className="condition1">
+      <p>
+        {alertAmount} {alert}
+      </p>
     </div>
   );
 };
