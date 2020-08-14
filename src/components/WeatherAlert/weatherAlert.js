@@ -14,8 +14,8 @@ const WeatherAlert = () => {
   const weatherAlerts = (e) => {
     API.getWeatherAlert(lat, lon).then((res) => {
       try {
-        setAlert(res.data.alerts[0].title);
-        setAlertAmount(res.data.alerts.length);
+        setAlert("Top Alert: " + res.data.alerts[0].title);
+        setAlertAmount("Total Alerts: " + res.data.alerts.length + " | ");
         console.log(res.data);
       } catch {
         setAlert(" ");
