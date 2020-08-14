@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Runwea/precache-manifest.3267e44af0cd30b08afea7661757726a.js"
+  "/Runwea/precache-manifest.50a4f89a2f92e798c340a51230fe344c.js"
 );
 
 self.addEventListener('message', (event) => {
